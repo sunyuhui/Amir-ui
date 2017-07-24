@@ -1,0 +1,11 @@
+/* 公共样式
+// @mainColor: #3dc6b6;
+// @mainHoverColor: #20bba9;
+// @assistColor: #ff9d3c;
+// @assistHoverColor: #ff8900;
+*/
+#app {
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
