@@ -407,14 +407,10 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
 
 exports.default = {
-	props: {
-		text: {
-			type: String,
-			default: '确定'
-		}
-	},
 	methods: {
 		emitClick: function emitClick() {
 			this.$emit('click');
@@ -448,10 +444,6 @@ exports.default = {
 			required: true,
 			default: false
 		},
-		text: {
-			required: true,
-			default: 'Confirm默认文案'
-		},
 		confirmText: {
 			default: '确定'
 		},
@@ -465,15 +457,15 @@ exports.default = {
 
 	methods: {
 		confirm: function confirm() {
-			this.show = false;
 			this.$emit('confirm');
 		},
 		cancel: function cancel() {
-			this.show = false;
 			this.$emit('cancel');
 		}
 	}
 }; //
+//
+//
 //
 //
 //
@@ -758,30 +750,27 @@ exports.default = install;
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "amir-confirm"
-  }, [_c('div', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.show),
       expression: "show"
     }],
+    staticClass: "amir-confirm"
+  }, [_c('div', {
+    staticClass: "container"
+  }, [_c('div', {
     staticClass: "content"
-  }, [_c('span', [_vm._v(_vm._s(_vm.text))]), _vm._v(" "), _c('amir-button', {
-    attrs: {
-      "text": _vm.cancelText
-    },
-    on: {
-      "click": _vm.confirm
-    }
-  }), _vm._v(" "), _c('amir-button', {
-    attrs: {
-      "text": _vm.confirmText
-    },
+  }, [_c('p', [_vm._t("default", [_vm._v("你确定吗？")])], 2), _vm._v(" "), _c('amir-button', {
+    staticClass: "cancel-button",
     on: {
       "click": _vm.cancel
     }
-  })], 1)])
+  }, [_vm._v(_vm._s(_vm.cancelText))]), _vm._v(" "), _c('amir-button', {
+    on: {
+      "click": _vm.confirm
+    }
+  }, [_vm._v(_vm._s(_vm.confirmText))])], 1)])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -960,7 +949,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.emitClick
     }
-  }, [_vm._v(_vm._s(_vm.text))])
+  }, [_vm._t("default", [_vm._v("确定")])], 2)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

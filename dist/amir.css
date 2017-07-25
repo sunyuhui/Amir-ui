@@ -240,3 +240,38 @@
   color: #333;
   font-size: 12px;
 }
+
+.amir-confirm[data-v-15a7a210] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(33, 33, 33, 0.3);
+}
+.amir-confirm .container[data-v-15a7a210] {
+  width: 260px;
+  height: 140px;
+  text-align: center;
+  color: #000;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -130px;
+  margin-top: -70px;
+}
+.amir-confirm .container .content[data-v-15a7a210] {
+  width: 260px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -130px;
+  margin-top: -50px;
+}
+.amir-confirm .container .content .cancel-button[data-v-15a7a210] {
+  margin-right: 20px;
+}
