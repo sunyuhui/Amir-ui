@@ -1,15 +1,11 @@
 <template>
-		<button class="btn" @click="emitClick">{{text}}</button>
+		<button class="btn" @click="emitClick">
+			<slot>确定</slot>
+		</button>
 </template>
 
 <script>
 	export default {
-		props: {
-			text: {
-				type: String,
-				default: '确定'
-			}
-		},
 		methods: {
 			emitClick() {
 				this.$emit('click');

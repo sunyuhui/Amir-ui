@@ -15,3 +15,7 @@
 a {
 	color:#000;
 }
+.demo-container {
+	width:980px;
+	margin:0 auto;
+}
