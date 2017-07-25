@@ -29,7 +29,7 @@
 <style lang="less" scoped>
 	@mainColor: #3dc6b6;
 	.container {
-		position: absolute;
+		position: fixed;
 		left:0;
 		top:0;
 		right:0;
@@ -38,7 +38,7 @@
 		.amir-loading-container {
 			width:40px;
 			height:40px;
-			position: fixed;
+			position: absolute;
 			left:50%;
 			top:50%;
 			margin-left: -20px;

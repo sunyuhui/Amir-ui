@@ -45,7 +45,7 @@
 </script>
 <style lang="less" scoped>
 	.amir-confirm {
-		position: absolute;
+		position: fixed;
 		left:0;
 		right:0;
 		top:0;
