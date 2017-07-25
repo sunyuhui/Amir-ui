@@ -3,11 +3,7 @@
 </template>
 
 <script>
-	// import { AmirPagination } from '../components'
 	export default {
-		components: {
-			// AmirPagination
-		},
 		data() {
 			return {
 				currentPage: 4,

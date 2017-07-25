@@ -79,20 +79,24 @@
 				let el = event.currentTarget;
 				let choosenPage = +el.innerText;
 				this.$emit('update:currentPage', choosenPage);
+				this.$emit('switchPage', choosenPage);
 			},
 			switchPrevPage() {
 				if(this.currentPage > 1) {
 					this.$emit('update:currentPage', this.currentPage - 1);
+					this.$emit('switchPage', this.currentPage - 1);
 				}
 			},
 			switchNextPage() {
 				if(this.currentPage < this.totalPage) {
 					this.$emit('update:currentPage', this.currentPage + 1);
+					this.$emit('switchPage', this.currentPage + 1);
 				}
 			},
 			goSwitchPage() {
 				if(+this.destinationPage >= 1 && +this.destinationPage <= this.totalPage) {
 					this.$emit('update:currentPage', +this.destinationPage);
+					this.$emit('switchPage', +this.destinationPage);
 				}
 			}
 		}
