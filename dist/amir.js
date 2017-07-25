@@ -180,21 +180,21 @@ module.exports = function normalizeComponent (
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(12)
+  __webpack_require__(16)
 }
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(6),
   /* template */
-  __webpack_require__(17),
+  __webpack_require__(21),
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-06250a20",
+  "data-v-c13f61e0",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/sunhui/amir-ui/src/components/amir-button/index.vue"
+Component.options.__file = "/Users/sunhui/Amir-ui/src/components/amir-button/index.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -205,9 +205,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-06250a20", Component.options)
+    hotAPI.createRecord("data-v-c13f61e0", Component.options)
   } else {
-    hotAPI.reload("data-v-06250a20", Component.options)
+    hotAPI.reload("data-v-c13f61e0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -224,21 +224,21 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(16)
+  __webpack_require__(12)
 }
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(7),
   /* template */
-  __webpack_require__(21),
+  __webpack_require__(17),
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-49447f18",
+  "data-v-15a7a210",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/sunhui/amir-ui/src/components/amir-confirm/index.vue"
+Component.options.__file = "/Users/sunhui/Amir-ui/src/components/amir-confirm/index.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -249,9 +249,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-49447f18", Component.options)
+    hotAPI.createRecord("data-v-15a7a210", Component.options)
   } else {
-    hotAPI.reload("data-v-49447f18", Component.options)
+    hotAPI.reload("data-v-15a7a210", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -268,21 +268,21 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(14)
+  __webpack_require__(13)
 }
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(8),
   /* template */
-  __webpack_require__(19),
+  __webpack_require__(18),
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-2f3a8e94",
+  "data-v-49bb8318",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/sunhui/amir-ui/src/components/amir-loading/index.vue"
+Component.options.__file = "/Users/sunhui/Amir-ui/src/components/amir-loading/index.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -293,9 +293,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2f3a8e94", Component.options)
+    hotAPI.createRecord("data-v-49bb8318", Component.options)
   } else {
-    hotAPI.reload("data-v-2f3a8e94", Component.options)
+    hotAPI.reload("data-v-49bb8318", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -322,11 +322,11 @@ var Component = __webpack_require__(0)(
   /* styles */
   injectStyle,
   /* scopeId */
-  "data-v-40664050",
+  "data-v-b30eb810",
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/sunhui/amir-ui/src/components/amir-pagination/index.vue"
+Component.options.__file = "/Users/sunhui/Amir-ui/src/components/amir-pagination/index.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -337,9 +337,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-40664050", Component.options)
+    hotAPI.createRecord("data-v-b30eb810", Component.options)
   } else {
-    hotAPI.reload("data-v-40664050", Component.options)
+    hotAPI.reload("data-v-b30eb810", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -356,13 +356,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(13)
+  __webpack_require__(14)
 }
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(10),
   /* template */
-  __webpack_require__(18),
+  __webpack_require__(19),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -370,7 +370,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/sunhui/amir-ui/src/components/amir-toast/index.vue"
+Component.options.__file = "/Users/sunhui/Amir-ui/src/components/amir-toast/index.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -381,9 +381,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-194084ff", Component.options)
+    hotAPI.createRecord("data-v-7112acdf", Component.options)
   } else {
-    hotAPI.reload("data-v-194084ff", Component.options)
+    hotAPI.reload("data-v-7112acdf", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -703,11 +703,11 @@ var _amirConfirm2 = _interopRequireDefault(_amirConfirm);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var amir = {
-	"amir-button": _amirButton2.default,
-	"amir-loading": _amirLoading2.default,
-	"amir-toast": _amirToast2.default,
-	"amir-pagination": _amirPagination2.default,
-	'amir-confirm': _amirConfirm2.default
+	"a-button": _amirButton2.default,
+	"a-loading": _amirLoading2.default,
+	"a-toast": _amirToast2.default,
+	"a-pagination": _amirPagination2.default,
+	'a-confirm': _amirConfirm2.default
 };
 
 function install(Vue) {
@@ -757,48 +757,42 @@ exports.default = install;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('button', {
-    staticClass: "btn",
-    on: {
-      "click": _vm.emitClick
-    }
-  }, [_vm._v(_vm._s(_vm.text))])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-06250a20", module.exports)
-  }
-}
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
+    staticClass: "amir-confirm"
+  }, [_c('div', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.show),
       expression: "show"
     }],
-    staticClass: "amir-toast-container"
-  }, [_c('div', {
-    staticClass: "amir-toast"
-  }, [_vm._v("\n\t\t" + _vm._s(_vm.text) + "\n\t")])])
+    staticClass: "content"
+  }, [_c('span', [_vm._v(_vm._s(_vm.text))]), _vm._v(" "), _c('amir-button', {
+    attrs: {
+      "text": _vm.cancelText
+    },
+    on: {
+      "click": _vm.confirm
+    }
+  }), _vm._v(" "), _c('amir-button', {
+    attrs: {
+      "text": _vm.confirmText
+    },
+    on: {
+      "click": _vm.cancel
+    }
+  })], 1)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-194084ff", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-15a7a210", module.exports)
   }
 }
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -844,7 +838,32 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-2f3a8e94", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-49bb8318", module.exports)
+  }
+}
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.show),
+      expression: "show"
+    }],
+    staticClass: "amir-toast-container"
+  }, [_c('div', {
+    staticClass: "amir-toast"
+  }, [_vm._v("\n\t\t" + _vm._s(_vm.text) + "\n\t")])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-7112acdf", module.exports)
   }
 }
 
@@ -927,7 +946,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-40664050", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-b30eb810", module.exports)
   }
 }
 
@@ -936,37 +955,18 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "amir-confirm"
-  }, [_c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.show),
-      expression: "show"
-    }],
-    staticClass: "content"
-  }, [_c('span', [_vm._v(_vm._s(_vm.text))]), _vm._v(" "), _c('amir-button', {
-    attrs: {
-      "text": _vm.cancelText
-    },
+  return _c('button', {
+    staticClass: "btn",
     on: {
-      "click": _vm.confirm
+      "click": _vm.emitClick
     }
-  }), _vm._v(" "), _c('amir-button', {
-    attrs: {
-      "text": _vm.confirmText
-    },
-    on: {
-      "click": _vm.cancel
-    }
-  })], 1)])
+  }, [_vm._v(_vm._s(_vm.text))])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-49447f18", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-c13f61e0", module.exports)
   }
 }
 

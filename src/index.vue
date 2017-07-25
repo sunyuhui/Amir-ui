@@ -3,16 +3,18 @@
     <p class="title">Amir -- Vue组件库</p>
 
     <div class="all-demos">
-      <template v-for="item in componentsNav">
+      <div v-for="item in componentsNav" class="item-container">
         <p class="title">{{item.category}}</p>
         <template v-for="components in item.map">
           <a :href="components.url">{{components.name}}</a>
         </template>
-      </template>
+      </div>
     </div>
-
-    <a target="_blank" href="https://wiki.sankuai.com/pages/viewpage.action?pageId=674565072">移动端设计规范</a>
-    <a target="_blank" href="https://wiki.sankuai.com/pages/viewpage.action?pageId=504677791">PC端设计规范</a>
+    <p class="clear">
+      <a target="_blank" href="https://wiki.sankuai.com/pages/viewpage.action?pageId=674565072">移动端设计规范</a>
+      <a target="_blank" href="https://wiki.sankuai.com/pages/viewpage.action?pageId=504677791">PC端设计规范</a>
+    </p>
+    
   </div>
 </template>
 
@@ -32,7 +34,7 @@
 @mainColor: #3dc6b6;
 .container {
   margin:60px auto;
-  width:500px;
+  width:100%;
   height: 300px;
   text-align: center;
 
@@ -46,17 +48,25 @@
   }
 
   .all-demos {
-    width:300px;
     margin-bottom: 20px;
-    .title {
-      font-size: 20px;
-      color:@mainColor;
-    }
-    a {
-      display: block;
-      color:#000;
-      border-radius: 4px;
-      margin-bottom: 5px;
+
+    .item-container {
+      float: left;
+      width: 300px;
+      margin-bottom: 20px;
+      .title {
+        font-size: 20px;
+        color:@mainColor;
+      }
+      a {
+        display: block;
+        width:60px;
+        margin:0 auto;
+        text-align: left;
+        color:#000;
+        border-radius: 4px;
+        margin-bottom: 5px;
+      }
     }
   }
 

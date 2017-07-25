@@ -1,6 +1,5 @@
 <template>
 	<div>
-	dsfd
 		<p>normal：<a-button @click="emitClick"></a-button> </p>
 		<p>normal hot：<a-button class="hot"></a-button> </p>
 		<p>normal 自定义文案：<a-button :text="text"></a-button> </p>
