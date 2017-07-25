@@ -38,7 +38,7 @@
 		.amir-loading-container {
 			width:40px;
 			height:40px;
-			position: absolute;
+			position: fixed;
 			left:50%;
 			top:50%;
 			margin-left: -20px;

@@ -18,26 +18,26 @@
 		},
 		props: {
 			show: {
+				type: Boolean,
 				required: true,
 				default: false
 			},
 			confirmText: {
+				type: String,
 				default: '确定'
 			},
 			cancelText: {
+				type: String,
 				default: '取消'
-			}
-		},
-		data() {
-			return {
-
 			}
 		},
 		methods: {
 			confirm() {
+				this.$emit('update:show', false);
 				this.$emit('confirm');
 			},
 			cancel() {
+				this.$emit('update:show', false);
 				this.$emit('cancel');
 			}
 		}

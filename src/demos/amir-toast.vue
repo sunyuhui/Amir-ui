@@ -1,23 +1,21 @@
 <template>
-	<a-toast :show="showToast"></a-toast>
+	<div class="demo-container">
+		<a-button @click="emitClick">弹出Toast</a-button>
+		<a-toast :show.sync="showToast">toast文案</a-toast>
+	</div>
 </template>
 
 <script>
-	// import { AmirToast } from '../components'
 	export default {
 		data() {
 			return {
-				showToast: true
+				showToast: false
 			}
 		},
-		components: {
-			// AmirToast
-		},
-		mounted() {
-			let _this = this;
-			setTimeout(()=>{
-				_this.showToast = false;
-			}, 2000);
+		methods: {
+			emitClick() {
+				this.showToast = true;
+			}
 		}
 	}
 </script>

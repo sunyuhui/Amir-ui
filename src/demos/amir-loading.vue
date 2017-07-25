@@ -1,18 +1,14 @@
 <template>
-	<div>
+	<div class="demo-container">
 		<a-loading v-show="showLoading"></a-loading>
 	</div>
 </template>
 <script>
-	// import { AmirLoading } from '../components'
 	export default {
 		data() {
 			return {
 				showLoading: true
 			}
-		},
-		components: {
-			// AmirLoading
 		},
 		mounted() {
 			let _this = this;
