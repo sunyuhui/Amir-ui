@@ -1,5 +1,5 @@
 <template>
-	<amir-pagination :current-page="currentPage" :total-page="totalPage" @switchPage="switchPage" :goto="goto"></amir-pagination>
+	<a-pagination :current-page="currentPage" :total-page="totalPage" @switchPage="switchPage" :goto="goto"></a-pagination>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-	<amir-toast :show="showToast"></amir-toast>
+	<a-toast :show="showToast"></a-toast>
 </template>
 
 <script>

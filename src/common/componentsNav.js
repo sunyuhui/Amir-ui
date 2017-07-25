@@ -14,6 +14,19 @@ let nav = [
 			{
 				name: 'Loading',
 				url: '/#/amirloading-demo'
+			},
+			{
+				name: 'confirm',
+				url: '/#/amirconfirm-demo'
+			}
+		]
+	},
+	{
+		category: '布局',
+		map: [
+			{
+				name: 'Pagination',
+				url: '/#/amirpagination-demo'
 			}
 		]
 	}

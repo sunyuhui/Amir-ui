@@ -1,12 +1,12 @@
 <template>
 	<div>
 	dsfd
-		<p>normal：<amir-button @click="emitClick"></amir-button> </p>
-		<p>normal hot：<amir-button class="hot"></amir-button> </p>
-		<p>normal 自定义文案：<amir-button :text="text"></amir-button> </p>
-		<p>normal disabled：<amir-button :text="text" class="disabled"></amir-button> </p>
-		<p>big: <amir-button class="big"></amir-button></p>
-		<p>bigger: <amir-button class="bigger"></amir-button></p> 
+		<p>normal：<a-button @click="emitClick"></a-button> </p>
+		<p>normal hot：<a-button class="hot"></a-button> </p>
+		<p>normal 自定义文案：<a-button :text="text"></a-button> </p>
+		<p>normal disabled：<a-button :text="text" class="disabled"></a-button> </p>
+		<p>big: <a-button class="big"></a-button></p>
+		<p>bigger: <a-button class="bigger"></a-button></p> 
 	</div>
 </template>
 

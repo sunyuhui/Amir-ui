@@ -1,5 +1,5 @@
 <template>
-	<amir-confirm :show="show" @confirm="confirm" @cancel="cancel" :text="text"></amir-confirm>
+	<a-confirm :show="show" @confirm="confirm" @cancel="cancel" :text="text"></a-confirm>
 </template>
 
 <script>

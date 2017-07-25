@@ -5,11 +5,11 @@ import AmirPagination from './amir-pagination'
 import AmirConfirm from './amir-confirm'
 
 let amir = {
-	"amir-button": AmirButton,
-	"amir-loading": AmirLoading,
-	"amir-toast": AmirToast,
-	"amir-pagination": AmirPagination,
-	'amir-confirm': AmirConfirm
+	"a-button": AmirButton,
+	"a-loading": AmirLoading,
+	"a-toast": AmirToast,
+	"a-pagination": AmirPagination,
+	'a-confirm': AmirConfirm
 };
 
 function install(Vue) {

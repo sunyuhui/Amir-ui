@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<amir-loading v-show="showLoading"></amir-loading>
+		<a-loading v-show="showLoading"></a-loading>
 	</div>
 </template>
 <script>
