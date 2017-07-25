@@ -441,25 +441,26 @@ exports.default = {
 	},
 	props: {
 		show: {
+			type: Boolean,
 			required: true,
 			default: false
 		},
 		confirmText: {
+			type: String,
 			default: '确定'
 		},
 		cancelText: {
+			type: String,
 			default: '取消'
 		}
 	},
-	data: function data() {
-		return {};
-	},
-
 	methods: {
 		confirm: function confirm() {
+			this.$emit('update:show', false);
 			this.$emit('confirm');
 		},
 		cancel: function cancel() {
+			this.$emit('update:show', false);
 			this.$emit('cancel');
 		}
 	}
@@ -650,14 +651,23 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = {
 	props: {
-		text: {
-			type: String,
-			default: 'toast文案'
-		},
 		show: {
 			type: Boolean,
 			default: false
+		},
+		time: {
+			type: Number,
+			default: 2,
+			validator: function validator(value) {
+				return value > 0;
+			}
 		}
+	},
+	mounted: function mounted() {
+		var _this = this;
+		setTimeout(function () {
+			_this.$emit('update:show', false);
+		}, _this.time * 1000);
 	}
 };
 
@@ -845,8 +855,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }],
     staticClass: "amir-toast-container"
   }, [_c('div', {
-    staticClass: "amir-toast"
-  }, [_vm._v("\n\t\t" + _vm._s(_vm.text) + "\n\t")])])
+    staticClass: "content"
+  }, [_vm._t("default", [_vm._v("toast")])], 2)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
