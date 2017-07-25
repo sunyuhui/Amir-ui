@@ -29,7 +29,7 @@
 <style lang="less" scoped>
 	@mainColor: #3dc6b6;
 	.container {
-		position: fixed;
+		position: absolute;
 		left:0;
 		top:0;
 		right:0;

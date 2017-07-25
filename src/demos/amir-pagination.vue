@@ -1,5 +1,5 @@
 <template>
-	<a-pagination :current-page="currentPage" :total-page="totalPage" @switchPage="switchPage" :goto="goto"></a-pagination>
+	<a-pagination :current-page.sync="currentPage" :total-page="totalPage" @switchPage="switchPage" :goto="goto"></a-pagination>
 </template>
 
 <script>
@@ -17,7 +17,6 @@
 		},
 		methods: {
 			switchPage(currentPage) {
-				this.currentPage = currentPage;
 				console.log('测试',currentPage);
 			}
 		}

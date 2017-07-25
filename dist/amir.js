@@ -576,21 +576,21 @@ exports.default = {
 		switchPage: function switchPage() {
 			var el = event.currentTarget;
 			var choosenPage = +el.innerText;
-			this.$emit('switchPage', choosenPage);
+			this.$emit('update:currentPage', choosenPage);
 		},
 		switchPrevPage: function switchPrevPage() {
 			if (this.currentPage > 1) {
-				this.$emit('switchPage', this.currentPage - 1);
+				this.$emit('update:currentPage', this.currentPage - 1);
 			}
 		},
 		switchNextPage: function switchNextPage() {
 			if (this.currentPage < this.totalPage) {
-				this.$emit('switchPage', this.currentPage + 1);
+				this.$emit('update:currentPage', this.currentPage + 1);
 			}
 		},
 		goSwitchPage: function goSwitchPage() {
 			if (+this.destinationPage >= 1 && +this.destinationPage <= this.totalPage) {
-				this.$emit('switchPage', +this.destinationPage);
+				this.$emit('update:currentPage', +this.destinationPage);
 			}
 		}
 	}
