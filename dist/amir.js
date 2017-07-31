@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 13);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -180,13 +180,13 @@ module.exports = function normalizeComponent (
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(16)
+  __webpack_require__(19)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(6),
+  __webpack_require__(7),
   /* template */
-  __webpack_require__(21),
+  __webpack_require__(25),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -224,13 +224,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(12)
+  __webpack_require__(14)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(7),
+  __webpack_require__(8),
   /* template */
-  __webpack_require__(17),
+  __webpack_require__(20),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -268,13 +268,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(13)
+  __webpack_require__(16)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(8),
+  __webpack_require__(9),
   /* template */
-  __webpack_require__(18),
+  __webpack_require__(22),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -312,13 +312,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(15)
+  __webpack_require__(18)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(9),
+  __webpack_require__(10),
   /* template */
-  __webpack_require__(20),
+  __webpack_require__(24),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -356,13 +356,57 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(14)
+  __webpack_require__(15)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(10),
+  __webpack_require__(11),
   /* template */
-  __webpack_require__(19),
+  __webpack_require__(21),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  "data-v-1632adc6",
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/Users/sunhui/Amir-ui/src/components/amir-table/index.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1632adc6", Component.options)
+  } else {
+    hotAPI.reload("data-v-1632adc6", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(17)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(12),
+  /* template */
+  __webpack_require__(23),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -394,7 +438,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -419,7 +463,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -478,7 +522,7 @@ exports.default = {
 //
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -516,7 +560,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -635,7 +679,60 @@ exports.default = {
 //
 
 /***/ }),
-/* 10 */
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+	props: {
+		tableData: {
+			type: Array,
+			required: true
+		},
+		tableHead: {
+			type: Array,
+			required: true
+		},
+		border: {
+			type: Boolean,
+			default: false
+		}
+	},
+	data: function data() {
+		return {};
+	}
+};
+
+/***/ }),
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -676,7 +773,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -694,7 +791,7 @@ var _amirLoading = __webpack_require__(3);
 
 var _amirLoading2 = _interopRequireDefault(_amirLoading);
 
-var _amirToast = __webpack_require__(5);
+var _amirToast = __webpack_require__(6);
 
 var _amirToast2 = _interopRequireDefault(_amirToast);
 
@@ -706,6 +803,10 @@ var _amirConfirm = __webpack_require__(2);
 
 var _amirConfirm2 = _interopRequireDefault(_amirConfirm);
 
+var _amirTable = __webpack_require__(5);
+
+var _amirTable2 = _interopRequireDefault(_amirTable);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var amir = {
@@ -713,7 +814,8 @@ var amir = {
 	"a-loading": _amirLoading2.default,
 	"a-toast": _amirToast2.default,
 	"a-pagination": _amirPagination2.default,
-	'a-confirm': _amirConfirm2.default
+	'a-confirm': _amirConfirm2.default,
+	'a-table': _amirTable2.default
 };
 
 function install(Vue) {
@@ -727,18 +829,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 exports.default = install;
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 14 */
@@ -760,6 +850,24 @@ exports.default = install;
 
 /***/ }),
 /* 17 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -795,7 +903,38 @@ if (false) {
 }
 
 /***/ }),
-/* 18 */
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "amir-table-container"
+  }, [_c('table', {
+    class: {
+      border: _vm.border
+    }
+  }, [_c('tr', [_vm._l((_vm.tableHead), function(item) {
+    return [_c('th', [_vm._v(_vm._s(item.name))])]
+  })], 2), _vm._v(" "), (_vm.tableData.length === 0) ? _c('tr', [_c('td', {
+    attrs: {
+      "colspan": _vm.tableHead.length
+    }
+  }, [_vm._v("暂无数据 ~")])]) : _vm._l((_vm.tableData), function(item) {
+    return _c('tr', _vm._l((_vm.tableHead), function(head) {
+      return _c('td', [_vm._v("\n\t\t\t\t\t" + _vm._s(item[head.key]) + "\n\t\t\t\t")])
+    }))
+  })], 2)])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-1632adc6", module.exports)
+  }
+}
+
+/***/ }),
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -846,7 +985,7 @@ if (false) {
 }
 
 /***/ }),
-/* 19 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -871,7 +1010,7 @@ if (false) {
 }
 
 /***/ }),
-/* 20 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -954,7 +1093,7 @@ if (false) {
 }
 
 /***/ }),
-/* 21 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

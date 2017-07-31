@@ -4,20 +4,16 @@ let nav = [
 		category: '提示',
 		map: [
 			{
-				name: 'Button',
-				url: '/#/amirbutton-demo'
-			},
-			{
 				name: 'Toast',
-				url: '/#/amirtoast-demo'
+				url: '/#/toast-demo'
 			},
 			{
 				name: 'Loading',
-				url: '/#/amirloading-demo'
+				url: '/#/loading-demo'
 			},
 			{
 				name: 'confirm',
-				url: '/#/amirconfirm-demo'
+				url: '/#/confirm-demo'
 			}
 		]
 	},
@@ -26,7 +22,25 @@ let nav = [
 		map: [
 			{
 				name: 'Pagination',
-				url: '/#/amirpagination-demo'
+				url: '/#/pagination-demo'
+			}
+		]
+	},
+	{
+		category: '表单',
+		map: [
+			{
+				name: 'Button',
+				url: '/#/button-demo'
+			}
+		]
+	},
+	{
+		category: '数据',
+		map: [
+			{
+				name: 'Table',
+				url: '/#/table-demo'
 			}
 		]
 	}

@@ -16,27 +16,27 @@ import AmirConfirmDemo from '../demos/amir-confirm'
 
 const routes = [
 	{
-		path: '/amirloading',
+		path: '/loading',
 		component: AmirLoading
 	},
 	{
-		path: '/amirloading-demo',
+		path: '/loading-demo',
 		component: AmirLoadingDemo
 	},
 	{
-		path: '/amirtoast',
+		path: '/toast',
 		component: AmirToast
 	},
 	{
-		path: '/amirtoast-demo',
+		path: '/toast-demo',
 		component: AmirToastDemo
 	},
 	{
-		path: '/amirconfirm',
+		path: '/confirm',
 		component: AmirConfirm
 	},
 	{
-		path: '/amirconfirm-demo',
+		path: '/confirm-demo',
 		component: AmirConfirmDemo
 	}
 ]

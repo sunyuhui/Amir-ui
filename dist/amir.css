@@ -269,3 +269,33 @@
 .amir-confirm .container .content .cancel-button[data-v-15a7a210] {
   margin-right: 20px;
 }
+
+table[data-v-1632adc6] {
+  min-width: 760px;
+  min-height: 40px;
+  font-size: 14px;
+  color: #666;
+  border-collapse: collapse;
+}
+table.border th[data-v-1632adc6] {
+  border: 1px solid #eaeaea;
+}
+table.border td[data-v-1632adc6] {
+  border: 1px solid #eaeaea;
+  border-top: none;
+}
+table th[data-v-1632adc6] {
+  background: #fafafa;
+}
+table th[data-v-1632adc6],
+table td[data-v-1632adc6] {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+table tr[data-v-1632adc6]:hover {
+  background: #fafafa;
+}
+table td a[data-v-1632adc6] {
+  color: #3dc6b6;
+}

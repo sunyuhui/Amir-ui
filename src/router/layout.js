@@ -8,11 +8,11 @@ import AmirPaginationDemo from '../demos/amir-pagination'
 
 const routes = [
 	{
-		path: '/amirpagination',
+		path: '/pagination',
 		component: AmirPagination
 	},
 	{
-		path: '/amirpagination-demo',
+		path: '/pagination-demo',
 		component: AmirPaginationDemo
 	}
 ]

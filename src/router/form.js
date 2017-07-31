@@ -6,11 +6,11 @@ import AmirButtonDemo from '../demos/amir-button'
 
 const routes = [
 	{
-		path: '/amirbutton',
+		path: '/button',
 		component: AmirButton
 	},
 	{
-		path: '/amirbutton-demo',
+		path: '/button-demo',
 		component: AmirButtonDemo
 	}
 ]
