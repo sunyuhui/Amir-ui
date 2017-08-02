@@ -1,5 +1,5 @@
 <template>
-	<div class="amir-toast-container" v-show="show">
+	<div class="amir-toast-container" v-if="show">
 		<div class="content">
 			<slot>toast</slot>
 		</div>
@@ -21,11 +21,15 @@
 				}
 			}
 		},
-		mounted() {
-			let _this = this;
-			setTimeout(()=>{
-				_this.$emit('update:show', false);
-			}, _this.time*1000);
+		watch: {
+			show: function(val, oldVal) {
+				let _this = this;
+				if(val) {
+					setTimeout(()=>{
+						_this.$emit('update:show', false);
+					}, _this.time*1000);
+				}
+			}
 		}
 
 	}
