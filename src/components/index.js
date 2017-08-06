@@ -5,6 +5,7 @@ import AmirPagination from './amir-pagination'
 import AmirConfirm from './amir-confirm'
 import AmirTable from './amir-table'
 import AmirInput from './amir-input'
+import AmirSelect from './amir-select'
 
 let amir = {
 	"a-button": AmirButton,
@@ -13,7 +14,8 @@ let amir = {
 	"a-pagination": AmirPagination,
 	'a-confirm': AmirConfirm,
 	'a-table': AmirTable,
-	'a-input': AmirInput
+	'a-input': AmirInput,
+	'a-select': AmirSelect
 };
 
 function install(Vue) {

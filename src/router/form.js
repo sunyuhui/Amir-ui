@@ -8,6 +8,10 @@ import AmirButtonDemo from '../demos/amir-button'
 import AmirInput from '../components/amir-input'
 import AmirInputDemo from '../demos/amir-input'
 
+//select
+import AmirSelect from '../components/amir-select'
+import AmirSelectDemo from '../demos/amir-select'
+
 const routes = [
 	{
 		path: '/button',
@@ -24,6 +28,14 @@ const routes = [
 	{
 		path: '/input-demo',
 		component: AmirInputDemo
+	},
+	{
+		path: '/select',
+		component: AmirSelect
+	},
+	{
+		path: '/select-demo',
+		component: AmirSelectDemo
 	}
 ]
 

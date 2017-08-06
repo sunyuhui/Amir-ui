@@ -36,6 +36,10 @@ let nav = [
 			{
 				name: 'Input',
 				url: '/#/input-demo'
+			},
+			{
+				name: 'Select',
+				url: '/#/select-demo'
 			}
 		]
 	},
