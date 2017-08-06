@@ -7,6 +7,7 @@ import AmirTable from './amir-table'
 import AmirInput from './amir-input'
 import AmirSelect from './amir-select'
 import AmirTextarea from './amir-textarea'
+import AmirDialog from './amir-dialog'
 
 let amir = {
 	"a-button": AmirButton,
@@ -17,7 +18,8 @@ let amir = {
 	'a-table': AmirTable,
 	'a-input': AmirInput,
 	'a-select': AmirSelect,
-	'a-textarea': AmirTextarea
+	'a-textarea': AmirTextarea,
+	'a-dialog': AmirDialog
 };
 
 function install(Vue) {

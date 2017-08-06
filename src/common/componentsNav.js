@@ -23,6 +23,10 @@ let nav = [
 			{
 				name: 'Pagination',
 				url: '/#/pagination-demo'
+			},
+			{
+				name: 'Dialog',
+				url: '/#/dialog-demo'
 			}
 		]
 	},
