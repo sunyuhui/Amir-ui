@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<a-select :selectData="selectData" v-model="value" class="demo"></a-select>
+		<a-select :selectData="selectData" v-model="value" class="demo" :readonly="readonly"></a-select>
 		<a-button @click="click"></a-button>
 	</div>
 </template>
@@ -18,7 +18,8 @@
 						text: "option2"
 					}
 				],
-				value: '1'
+				value: '1',
+				readonly: false
 			}
 		},
 		methods: {
