@@ -32,6 +32,10 @@ let nav = [
 			{
 				name: 'Button',
 				url: '/#/button-demo'
+			},
+			{
+				name: 'Input',
+				url: '/#/input-demo'
 			}
 		]
 	},
