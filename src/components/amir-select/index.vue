@@ -24,7 +24,6 @@
 		},
 		methods: {
 			emitChange(value) {
-				console.log('dfd', value);
 				this.$emit('change', value);
 			}
 		}

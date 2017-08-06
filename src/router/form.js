@@ -12,6 +12,10 @@ import AmirInputDemo from '../demos/amir-input'
 import AmirSelect from '../components/amir-select'
 import AmirSelectDemo from '../demos/amir-select'
 
+//textarea
+import AmirTextarea from '../components/amir-textarea'
+import AmirTextareaDemo from '../demos/amir-textarea'
+
 const routes = [
 	{
 		path: '/button',
@@ -36,6 +40,14 @@ const routes = [
 	{
 		path: '/select-demo',
 		component: AmirSelectDemo
+	},
+	{
+		path: '/textarea',
+		component: AmirTextarea
+	},
+	{
+		path: '/textarea-demo',
+		component: AmirTextareaDemo
 	}
 ]
 

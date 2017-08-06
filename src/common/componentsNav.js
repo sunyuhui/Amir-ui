@@ -40,6 +40,10 @@ let nav = [
 			{
 				name: 'Select',
 				url: '/#/select-demo'
+			},
+			{
+				name: 'Textarea',
+				url: '/#/textarea-demo'
 			}
 		]
 	},
