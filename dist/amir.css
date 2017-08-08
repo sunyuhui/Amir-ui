@@ -299,3 +299,72 @@ table tr[data-v-1632adc6]:hover {
 table td a[data-v-1632adc6] {
   color: #3dc6b6;
 }
+
+.amir-input-container[data-v-8850027c] {
+  display: inline-block;
+}
+.amir-input-container input[data-v-8850027c] {
+  text-indent: 10px;
+  font-size: 14px;
+}
+.amir-input-container .error-msg[data-v-8850027c] {
+  color: #f00;
+  font-size: 14px;
+}
+
+.amir-select-container select[data-v-14c6285a] {
+  min-width: 150px;
+  height: 30px;
+}
+
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+span {
+  display: block;
+}
+span i {
+  font-style: normal;
+  color: #f00;
+}
+
+.amir-dialog-container[data-v-3b27fcb4] {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(33, 33, 33, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.amir-dialog-container .dialog-content[data-v-3b27fcb4] {
+  position: relative;
+  background: #fff;
+  min-width: 260px;
+  max-width: 460px;
+  min-height: 100px;
+  max-height: 400px;
+  border-radius: 4px;
+}
+.amir-dialog-container .dialog-content .title[data-v-3b27fcb4] {
+  background: #eee;
+  padding: 0 10px;
+  font-size: 16px;
+  height: 25px;
+  line-height: 25px;
+  color: #000;
+  font-weight: bold;
+}
+.amir-dialog-container .dialog-content .main[data-v-3b27fcb4] {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.amir-dialog-container .dialog-content .footer[data-v-3b27fcb4] {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}

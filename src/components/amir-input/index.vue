@@ -67,6 +67,7 @@
 
 <style lang="less" scoped>
 	.amir-input-container {
+		display: inline-block;
 		input {
 			text-indent: 10px;
 			font-size: 14px;
