@@ -18,12 +18,12 @@
 			selectData: {
 				type: Array
 			},
-			selected: {
-				type: String
-			},
 			readonly: {
 				type: Boolean,
 				default: false
+			},
+			selected: {
+				type: [String,Number]
 			}
 		},
 		methods: {

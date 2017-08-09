@@ -778,7 +778,8 @@ exports.default = {
 			type: String
 		},
 		placeholder: {
-			type: String
+			type: String,
+			default: '请输入内容'
 		},
 		readonly: {
 			type: Boolean
@@ -786,9 +787,6 @@ exports.default = {
 		value: {
 			type: [String, Number],
 			twoWay: true
-		},
-		type: {
-			type: String
 		},
 		required: {
 			type: Boolean
@@ -998,12 +996,12 @@ exports.default = {
 		selectData: {
 			type: Array
 		},
-		selected: {
-			type: String
-		},
 		readonly: {
 			type: Boolean,
 			default: false
+		},
+		selected: {
+			type: [String, Number]
 		}
 	},
 	methods: {

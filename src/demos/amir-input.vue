@@ -17,7 +17,6 @@
 			return {
 				placeholder: "请输入内容",
 				readonly: false,
-				type: 'email',
 				value: 'text',
 				required: true
 			}

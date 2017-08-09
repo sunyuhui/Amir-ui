@@ -18,7 +18,7 @@
 						text: "option2"
 					}
 				],
-				value: '1',
+				value: '2',
 				readonly: false
 			}
 		},

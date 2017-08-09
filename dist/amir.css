@@ -308,6 +308,7 @@ table td a[data-v-1632adc6] {
   font-size: 14px;
 }
 .amir-input-container .error-msg[data-v-8850027c] {
+  display: inline;
   color: #f00;
   font-size: 14px;
 }

@@ -31,7 +31,8 @@
 				type: String
 			},
 			placeholder: {
-				type: String
+				type: String,
+				default: '请输入内容'
 			},
 			readonly: {
 				type: Boolean
@@ -39,9 +40,6 @@
 			value: {
 				type: [String, Number],
 				twoWay: true
-			},
-			type: {
-				type: String
 			},
 			required: {
 				type: Boolean
@@ -73,6 +71,7 @@
 			font-size: 14px;
 		}
 		.error-msg {
+			display: inline;
 			color:#f00;
 			font-size: 14px;
 		}
