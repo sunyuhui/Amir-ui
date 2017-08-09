@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<a-select :selectData="selectData" v-model="value" class="demo" :readonly="readonly"></a-select>
+		<a-select :selectData="selectData" v-model="value" class="demo" :readonly="readonly" @change="switchSelect"></a-select>
 		<a-button @click="click"></a-button>
 	</div>
 </template>
@@ -18,13 +18,16 @@
 						text: "option2"
 					}
 				],
-				value: '2',
+				value: '1',
 				readonly: false
 			}
 		},
 		methods: {
 			click() {
 				console.log(this.value);
+			},
+			switchSelect(value) {
+				console.log(value + 'sunyuhui');
 			}
 		}
 	}
