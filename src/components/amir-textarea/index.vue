@@ -48,7 +48,9 @@
 				this.$emit('input', value);
 			},
 			emitDown(event){
-				if(this.max && this.value.length >= this.max) {
+				let keyCodesFileter = [8, 37, 38, 39, 40];
+
+				if(keyCodesFileter.indexOf(event.keyCode) === -1 && this.max && this.value.length >= this.max) {
 					event.preventDefault();
 				}
 			}

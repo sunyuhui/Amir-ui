@@ -4,7 +4,8 @@
 			v-model="value" 
 			:placeholder="placeholder" 
 			:readonly="readonly"
-			:max="max" ></a-textarea>
+			:max="max"
+			@input="edit" ></a-textarea>
 		<a-button @click="click">获取Textarea的值</a-button>
 	</div>
 </template>
@@ -22,6 +23,9 @@
 		methods: {
 			click() {
 				console.log(this.value);
+			},
+			edit(value) {
+				console.log(value + 'sunyuhui');
 			}
 		}
 	}
