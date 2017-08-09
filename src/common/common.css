@@ -22,3 +22,6 @@ a {
  p {
  	margin:0;
  }
+ textarea, input, button, select {
+ 	outline: none!important;
+ }

@@ -3,7 +3,6 @@
 		<a-input 
 			:placeholder="placeholder" 
 			:readonly="readonly"
-			:type="type"
 			v-model="value"
 			@input="emitInput"
 			:required="required" ></a-input>
@@ -22,8 +21,8 @@
 			}
 		},
 		methods: {
-			emitInput() {
-				console.log()
+			emitInput(value) {
+				console.log(value + 'sunyuhui');
 			},
 			checkValue() {
 				console.log(this.value);
