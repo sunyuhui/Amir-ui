@@ -4,6 +4,7 @@
 // @assistColor: #ff9d3c;
 // @assistHoverColor: #ff8900;
 */
+
 #app {
 	font-family: 'Avenir', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -13,15 +14,19 @@
 	clear:both;
 }
 a {
-	color:#000;
+	color:#3dc6b6;
+	text-decoration: none;
+}
+a:hover {
+	cursor: pointer;
 }
 .demo-container {
 	width:980px;
 	margin:20px auto 0;
 }
- p {
- 	margin:0;
- }
- textarea, input, button, select {
- 	outline: none!important;
- }
+p {
+	margin:0;
+}
+textarea, input, button, select {
+	outline: none!important;
+}

@@ -11,9 +11,10 @@
 			</tr>
 			<template v-else>
 				<tr v-for="item in tableData">
-					<td v-for="head in tableHead">
-						{{item[head.key]}}
-					</td>
+					<template v-for="head in tableHead">
+						<td v-if="raw && raw.length>0 && raw.indexOf(head.key) !== -1" v-html="item[head.key]"></td>
+						<td v-else>{{item[head.key]}}</td>
+					</template>
 				</tr>
 			</template>
 		</table>
@@ -34,6 +35,9 @@
 			border: {
 				type: Boolean,
 				default: false
+			},
+			raw: {
+				type: [Array, String]
 			}
 		},
 		data() {
@@ -51,6 +55,21 @@
 		font-size: 14px;
 		color:#666;
 		border-collapse: collapse;
+
+		tr {
+			th {
+				background:#fafafa;
+			}
+			th, td {
+				height:40px;
+				line-height: 40px;
+				text-align: center;
+			}
+			&:hover {
+				background:#fafafa;
+			}
+		}
+
 		&.border {
 			th {
 				border: 1px solid #eaeaea;
@@ -58,24 +77,6 @@
 			td {
 				border: 1px solid #eaeaea;
 				border-top: none;
-			}
-		}
-		th {
-			background:#fafafa;
-		}
-		th, td {
-			height:40px;
-			line-height: 40px;
-			text-align: center;
-		}
-		tr {
-			&:hover {
-				background:#fafafa;
-			}
-		}
-		td {
-			a {
-				color:#3dc6b6;
 			}
 		}
 	}
