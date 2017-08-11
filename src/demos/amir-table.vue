@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<a-table :border="border" :tableHead="tableHead" :tableData="tableData" :raw="rawList"></a-table>
+		<a-table :border="border" :table-head="tableHead" :table-data.sync="tableData" :raw="rawList"></a-table>
 	</div>
 </template>
 
@@ -13,18 +13,18 @@
 					{
 						name: "田小啵",
 						debt: 1000,
-						nickName: "田师傅",
+						nickName: "tian",
 						operation: "<a href='http://baidu.com'>乱棍打死</a>"
 					},
 					{
 						name: "张姨超",
-						nickName: "超",
+						nickName: "chao",
 						debt: 2000,
 						operation: "<a href='http://baidu.com'>乱棍打死</a>"
 					},
 					{
 						name: "玩安旭",
-						nickName: "老司机",
+						nickName: "an",
 						debt: 3000,
 						operation: "<a href='http://baidu.com'>乱棍打死</a>"
 					}
@@ -40,7 +40,8 @@
 					},
 					{
 						name: "欠款",
-						key: "debt"
+						key: "debt",
+						sortable: true
 					},
 					{
 						name: "操作",

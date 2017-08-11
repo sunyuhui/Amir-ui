@@ -1043,6 +1043,10 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+//
 
 exports.default = {
 	props: {
@@ -1057,10 +1061,18 @@ exports.default = {
 		border: {
 			type: Boolean,
 			default: false
+		},
+		raw: {
+			type: [Array, String]
 		}
 	},
-	data: function data() {
-		return {};
+	methods: {
+		sort: function sort(type, key) {
+			var sortedData = this.tableData.sort(function (a, b) {
+				return type === 'up' ? a[key] - b[key] : b[key] - a[key];
+			});
+			this.$emit('update:table-data', sortedData);
+		}
 	}
 };
 
@@ -1400,15 +1412,33 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       border: _vm.border
     }
   }, [_c('tr', [_vm._l((_vm.tableHead), function(item) {
-    return [_c('th', [_vm._v(_vm._s(item.name))])]
+    return [(item.sortable) ? [_c('th', [_vm._v(_vm._s(item.name) + " "), _c('i', {
+      staticClass: "up-sort icon",
+      on: {
+        "click": function($event) {
+          _vm.sort('up', item.key)
+        }
+      }
+    }, [_vm._v("^")]), _vm._v(" "), _c('i', {
+      staticClass: "down-sort icon",
+      on: {
+        "click": function($event) {
+          _vm.sort('down', item.key)
+        }
+      }
+    }, [_vm._v("^")])])] : _c('th', [_vm._v(_vm._s(item.name))])]
   })], 2), _vm._v(" "), (_vm.tableData.length === 0) ? _c('tr', [_c('td', {
     attrs: {
       "colspan": _vm.tableHead.length
     }
   }, [_vm._v("暂无数据 ~")])]) : _vm._l((_vm.tableData), function(item) {
-    return _c('tr', _vm._l((_vm.tableHead), function(head) {
-      return _c('td', [_vm._v("\n\t\t\t\t\t" + _vm._s(item[head.key]) + "\n\t\t\t\t")])
-    }))
+    return _c('tr', [_vm._l((_vm.tableHead), function(head) {
+      return [(_vm.raw && _vm.raw.length > 0 && _vm.raw.indexOf(head.key) !== -1) ? _c('td', {
+        domProps: {
+          "innerHTML": _vm._s(item[head.key])
+        }
+      }) : _c('td', [_vm._v(_vm._s(item[head.key]))])]
+    })], 2)
   })], 2)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
