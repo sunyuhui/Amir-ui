@@ -8,7 +8,7 @@
 	export default {
 		methods: {
 			emitClick() {
-				this.$emit('click');
+				this.$emit('click', 'sunyuhui');
 			}
 		}
 	}

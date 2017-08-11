@@ -16,6 +16,9 @@ import AmirSelectDemo from '../demos/amir-select'
 import AmirTextarea from '../components/amir-textarea'
 import AmirTextareaDemo from '../demos/amir-textarea'
 
+import AmirUpload from '../demos/amir-upload.vue'
+import AmirUploadDemo from '../components/amir-upload'
+
 const routes = [
 	{
 		path: '/button',
@@ -48,6 +51,14 @@ const routes = [
 	{
 		path: '/textarea-demo',
 		component: AmirTextareaDemo
+	},
+	{
+		path: '/upload',
+		component: AmirUpload
+	},
+	{
+		path: '/upload-demo',
+		component: AmirUploadDemo
 	}
 ]
 

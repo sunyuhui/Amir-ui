@@ -13,8 +13,8 @@
 
 	export default {
 		methods: {
-			emitClick() {
-				console.log('被点击了');
+			emitClick(res) {
+				console.log('被点击了', res);
 			}
 		}
 	}

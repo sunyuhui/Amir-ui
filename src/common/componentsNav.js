@@ -48,6 +48,10 @@ let nav = [
 			{
 				name: 'Textarea',
 				url: '/#/textarea-demo'
+			},
+			{
+				name: 'Upload',
+				url: '/#/upload-demo'
 			}
 		]
 	},
