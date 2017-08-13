@@ -386,3 +386,29 @@ span i {
   margin-bottom: 10px;
   text-align: center;
 }
+
+.file-container[data-v-b07181c2] {
+  position: relative;
+  display: inline-block;
+  padding: 4px 10px;
+  overflow: hidden;
+  height: 20px;
+  line-height: 20px;
+  background: #3dc6b6;
+  color: #fff;
+  border-radius: 2px;
+}
+.file-container[data-v-b07181c2]:hover {
+  background: #20bba9;
+}
+.file-container.disable[data-v-b07181c2] {
+  background: #e5e5e5;
+  color: #b2b2b2;
+}
+.file-container input[type='file'][data-v-b07181c2] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}

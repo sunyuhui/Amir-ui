@@ -1,16 +1,19 @@
 <template>
-	<div>
-		<!-- <input type="file" name="" id="" @change="choose($event.target.files)" v-if="multiple" multiple>
-		<input type="file" name="" id="" @change="choose($event.target.files)" v-else> -->
-		<button @click="emitClick">测试butotn</button>
+	<div class="file-container" :class='{disable: readonly}'>
+		<input type="file" :disabled="readonly"  @change="choose($event.target.files)" v-if="multiple" multiple>
+		<input type="file" :disabled="readonly" @change="choose($event.target.files)" v-else>
+		<span><slot>选择文件</slot></span>
 	</div>
-	
 </template>
 
 <script>
 	export default {
 		props: {
 			multiple: {
+				type: Boolean,
+				default: false
+			},
+			readonly: {
 				type: Boolean,
 				default: false
 			}
@@ -25,17 +28,45 @@
 					}
 					reader.readAsDataURL(files[i]);
 				}
-				console.log('dataUrls', dataUrls);
-				this.$emit('changeFile', dataUrls);
-			},
-			emitClick() {
-				console.log('dfdsfdsfsdfdsf')
-				this.$emit('click');
+				this.$emit('selectFile', dataUrls);
 			}
 		}
 	}
 </script>
 
 <style lang="less" scoped>
-	
+	@mainColor: #3dc6b6;
+	@mainHoverColor: #20bba9;
+	@disabledColor: #e5e5e5;
+
+	.file-container {
+		position: relative;
+		display: inline-block;
+		padding:4px 10px;
+		
+		overflow: hidden;
+		height: 20px;
+		line-height: 20px;
+		background: @mainColor;
+		color:#fff;
+		border-radius: 2px;
+
+		&:hover {
+			background:@mainHoverColor;
+		}
+
+		&.disable {
+			background: @disabledColor;
+			color:#b2b2b2;
+		}
+		
+
+		input[type='file'] {
+			position:absolute;
+			left:0;
+			top:0;
+			opacity: 0;
+			filter: alpha(opacity=0);
+		}
+	}
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<a-upload @click="selectFile"></a-upload>
+		<a-upload @selectFile="selectFile" :readonly="readonly">上传文件</a-upload>
 	</div>
 	
 </template>
@@ -9,13 +9,12 @@
 	export default {
 		data() {
 			return {
-				selected: ''
+				readonly: true
 			}
 		},
 		methods: {
 			selectFile(files) {
-				console.log('dfsdf');
-				// console.log(files);
+				console.log(files);
 			}
 		}
 	}

@@ -16,8 +16,8 @@ import AmirSelectDemo from '../demos/amir-select'
 import AmirTextarea from '../components/amir-textarea'
 import AmirTextareaDemo from '../demos/amir-textarea'
 
-import AmirUpload from '../demos/amir-upload.vue'
-import AmirUploadDemo from '../components/amir-upload'
+import AmirUpload from '../components/amir-upload'
+import AmirUploadDemo from '../demos/amir-upload'
 
 const routes = [
 	{
