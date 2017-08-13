@@ -1,5 +1,8 @@
 <template>
-	<a-upload @changeFile="selectFile"></a-upload>
+	<div>
+		<a-upload @click="selectFile"></a-upload>
+	</div>
+	
 </template>
 
 <script>
@@ -12,7 +15,7 @@
 		methods: {
 			selectFile(files) {
 				console.log('dfsdf');
-				console.log(files);
+				// console.log(files);
 			}
 		}
 	}

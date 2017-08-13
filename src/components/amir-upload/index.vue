@@ -1,7 +1,8 @@
 <template>
 	<div>
-		<input type="file" name="" id="" @change="choose($event.target.files)" v-if="multiple" multiple>
-		<input type="file" name="" id="" @change="choose($event.target.files)" v-else>
+		<!-- <input type="file" name="" id="" @change="choose($event.target.files)" v-if="multiple" multiple>
+		<input type="file" name="" id="" @change="choose($event.target.files)" v-else> -->
+		<button @click="emitClick">测试butotn</button>
 	</div>
 	
 </template>
@@ -26,6 +27,10 @@
 				}
 				console.log('dataUrls', dataUrls);
 				this.$emit('changeFile', dataUrls);
+			},
+			emitClick() {
+				console.log('dfdsfdsfsdfdsf')
+				this.$emit('click');
 			}
 		}
 	}
