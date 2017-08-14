@@ -9,7 +9,7 @@
 	export default {
 		data() {
 			return {
-				readonly: true
+				readonly: false
 			}
 		},
 		methods: {
