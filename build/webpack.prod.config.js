@@ -32,7 +32,10 @@ module.exports = {
 				loader: 'vue-loader',
 				options: {
 					less: 'vue-style-loader!css-loader!less-loader',
-					extractCSS: true
+					extractCSS: true,
+					postcss: [
+						require('postcss-cssnext')({browsers: ['last 2 versions']})
+					]
 				}
 			},
 			{

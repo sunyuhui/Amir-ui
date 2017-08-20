@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
-import './common/common.css';
+// import './common/common.less';
 import 'normalize.css';
 import Amir from './components';
 Vue.use(Amir);

@@ -58,7 +58,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 	textarea {
 		padding:10px;
 		font-size: 14px;

@@ -542,7 +542,7 @@ var Component = __webpack_require__(0)(
   /* styles */
   injectStyle,
   /* scopeId */
-  null,
+  "data-v-ce8a9f50",
   /* moduleIdentifier (server only) */
   null
 )

@@ -45,6 +45,7 @@
   a {
     font-size: 14px;
     text-decoration: none;
+    color:#000;
   }
 
   .all-demos {

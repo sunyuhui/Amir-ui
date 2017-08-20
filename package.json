@@ -39,6 +39,8 @@
     "html-webpack-plugin": "^2.29.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.4",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-px2rem": "^0.3.0",
     "style-loader": "^0.18.2",
     "vue-style-loader": "^3.0.1",
     "webpack-dev-middleware": "^1.11.0",
