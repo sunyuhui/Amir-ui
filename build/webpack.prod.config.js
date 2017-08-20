@@ -34,7 +34,20 @@ module.exports = {
 					less: 'vue-style-loader!css-loader!less-loader',
 					extractCSS: true,
 					postcss: [
-						require('postcss-cssnext')({browsers: ['last 2 versions']})
+						require('postcss-cssnext')({browsers: ['last 2 versions']}),
+						require('postcss-bem')({
+							defaultNamespace: 'amir',
+							style: "bem",
+							separators: {
+								'descendent': '__',
+								'modifier': '--'
+							},
+							shortcuts: {
+								'component': 'b',
+								'descendent': 'e',
+								'modifier': 'm'
+							}
+						})
 					]
 				}
 			},

@@ -39,6 +39,7 @@
     "html-webpack-plugin": "^2.29.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.4",
+    "postcss-bem": "^0.4.1",
     "postcss-cssnext": "^3.0.2",
     "postcss-px2rem": "^0.3.0",
     "style-loader": "^0.18.2",
