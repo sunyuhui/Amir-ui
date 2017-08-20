@@ -1,14 +1,40 @@
 <template>
-		<button class="btn" @click="emitClick">
+		<button :class="classObject" @click="emitClick">
 			<slot>确定</slot>
 		</button>
 </template>
 
 <script>
 	export default {
+		props: {
+			size: {
+				type: String,
+				default: 'normal'
+			},
+			disabled: {
+				type: Boolean,
+				default: false
+			},
+			hot: {
+				type: Boolean,
+				default: false
+			}
+
+		},
+		data() {
+			return {
+				classObject: {
+					'amir--btn': true,
+					'amir--btn--big': this.size === 'big',
+					'amir--btn--bigger': this.size === 'bigger',
+					'amir--btn--disabled': this.disabled,
+					'amir--btn--hot': this.hot
+				}
+			}
+		},
 		methods: {
 			emitClick() {
-				this.$emit('click', 'sunyuhui');
+				this.$emit('click');
 			}
 		}
 	}
@@ -27,6 +53,12 @@
 		border-radius: 2px;
 		color:#fff;
 		border: 1px solid @mainColor;
+
+		&:hover {
+			background: @mainHoverColor;
+			border: 1px solid @mainHoverColor;
+			cursor: pointer;
+		}
 
 		@m big {
 			height:40px;
@@ -65,11 +97,8 @@
 			}
 		}
 
-		&:hover {
-			background: @mainHoverColor;
-			border: 1px solid @mainHoverColor;
-			cursor: pointer;
-		}
+		
+		
 	}
 
 	

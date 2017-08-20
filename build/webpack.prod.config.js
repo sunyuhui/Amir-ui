@@ -32,7 +32,6 @@ module.exports = {
 				loader: 'vue-loader',
 				options: {
 					less: 'vue-style-loader!css-loader!less-loader',
-					extractCSS: true,
 					postcss: [
 						require('postcss-cssnext')({browsers: ['last 2 versions']}),
 						require('postcss-bem')({
@@ -47,8 +46,10 @@ module.exports = {
 								'descendent': 'e',
 								'modifier': 'm'
 							}
-						})
-					]
+						}),
+						// require('postcss-nested')()
+					],
+					extractCSS: true
 				}
 			},
 			{

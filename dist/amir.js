@@ -675,9 +675,36 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	props: {
+		size: {
+			type: String,
+			default: 'normal'
+		},
+		disabled: {
+			type: Boolean,
+			default: false
+		},
+		hot: {
+			type: Boolean,
+			default: false
+		}
+
+	},
+	data: function data() {
+		return {
+			classObject: {
+				'amir--btn': true,
+				'amir--btn--big': this.size === 'big',
+				'amir--btn--bigger': this.size === 'bigger',
+				'amir--btn--disabled': this.disabled,
+				'amir--btn--hot': this.hot
+			}
+		};
+	},
+
 	methods: {
 		emitClick: function emitClick() {
-			this.$emit('click', 'sunyuhui');
+			this.$emit('click');
 		}
 	}
 };
@@ -1824,7 +1851,7 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('button', {
-    staticClass: "btn",
+    class: _vm.classObject,
     on: {
       "click": _vm.emitClick
     }
