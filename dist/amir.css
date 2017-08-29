@@ -1,6 +1,3 @@
-.amir--btn--hot[data-v-c13f61e0] {}
-.amir--btn--disabled[data-v-c13f61e0] {}
-.amir--btn--bigger[data-v-c13f61e0] {}
 .amir--btn[data-v-c13f61e0] {
     height: 30px;
     line-height: 30px;
@@ -12,12 +9,46 @@
     color: #fff;
     border: 1px solid #3dc6b6;
 }
+.amir--btn .test[data-v-c13f61e0]:hover {
+    background: #f00;
+}
 .amir--btn[data-v-c13f61e0] :hover {
     background: #20bba9;
     border: 1px solid #20bba9;
     cursor: pointer;
 }
-.amir--btn--big[data-v-c13f61e0] {}
+.amir--btn--big[data-v-c13f61e0] {
+    height: 40px;
+    line-height: 40px;
+    min-width: 60px;
+    padding: 0 15px;
+    font-size: 14px;
+}
+.amir--btn--bigger[data-v-c13f61e0] {
+    height: 60px;
+    line-height: 60px;
+    min-width: 160px;
+    font-size: 24px;
+    padding: 0 20px;
+    border-radius: 4px;
+}
+.amir--btn--disabled[data-v-c13f61e0] {
+    background: #e5e5e5;
+    color: #b2b2b2;
+    border: 1px solid #ccc;
+}
+.amir--btn--disabled[data-v-c13f61e0] :hover {
+    background: #e5e5e5;
+    border: 1px solid #ccc;
+}
+.amir--btn--hot[data-v-c13f61e0] {
+    background: #ff9d3c;
+    border: 1px solid #ff9d3c;
+}
+.amir--btn--hot[data-v-c13f61e0] :hover {
+    background: #ff8900;
+    border: 1px solid #ff8900;
+}
 
 .container[data-v-49bb8318] {
   position: absolute;

@@ -6,8 +6,8 @@ module.exports = {
 	entry: './src/main.js',
 	output: {
 		filename: 'bundle.js',
-		path: path.resolve(__dirname, '../dist')
-		// publicPath: './'
+		path: path.resolve(__dirname, '../dist'),
+		publicPath: '/'
 	},
 	resolve: {
 		extensions: ['.js', '.vue', '.json'],
@@ -24,7 +24,7 @@ module.exports = {
 					less: 'vue-style-loader!css-loader!less-loader',
 					postcss: [
 						require('postcss-cssnext')({browsers: ['last 2 versions']}),
-						require('postcss-bem')({
+						require('postcss-bem-fix')({
 							defaultNamespace: 'amir',
 							style: "bem",
 							separators: {
@@ -37,6 +37,7 @@ module.exports = {
 								'modifier': 'm'
 							}
 						}),
+						// require('postcss-nested-ancestors'),
 						require('postcss-nested')
 					],
 					extractCSS: true

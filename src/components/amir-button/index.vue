@@ -71,7 +71,7 @@
 			border-radius: 4px;
 		}
 
-		@m disabled {
+		@m disabled{
 			background:@disabledColor;
 			color:#b2b2b2;
 			border:1px solid #ccc;
@@ -91,12 +91,17 @@
 			}
 		}
 
+		.test {
+			&:hover {
+				background:#f00;
+			}
+		}
+
 		&:hover {
 			background: @mainHoverColor;
 			border: 1px solid @mainHoverColor;
 			cursor: pointer;
 		}
-		
 	}
 
 	

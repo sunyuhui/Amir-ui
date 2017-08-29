@@ -8,8 +8,8 @@ module.exports = {
 		filename: 'amir.js',
 		path: path.resolve(__dirname, '../dist'),
 		library: 'Amir',
-		libraryTarget: 'umd'
-		// publicPath: '/assets/'
+		libraryTarget: 'umd',
+		publicPath: '/'
 	},
 	resolve: {
 		extensions: ['.js', '.vue', '.json'],
@@ -34,7 +34,7 @@ module.exports = {
 					less: 'vue-style-loader!css-loader!less-loader',
 					postcss: [
 						require('postcss-cssnext')({browsers: ['last 2 versions']}),
-						require('postcss-bem')({
+						require('postcss-bem-fix')({
 							defaultNamespace: 'amir',
 							style: "bem",
 							separators: {
@@ -47,6 +47,7 @@ module.exports = {
 								'modifier': 'm'
 							}
 						}),
+						// require('postcss-nested-ancestors')(),
 						require('postcss-nested')
 					],
 					extractCSS: true
