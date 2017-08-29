@@ -23,7 +23,7 @@
     "css-loader": "^0.28.4",
     "normalize.css": "^7.0.0",
     "vue": "^2.3.4",
-    "vue-loader": "^12.2.1",
+    "vue-loader": "^13.0.0",
     "vue-router": "^2.6.0",
     "vue-template-compiler": "^2.3.4",
     "webpack": "^2.6.1"
@@ -43,7 +43,6 @@
     "postcss-bem": "^0.4.1",
     "postcss-cssnext": "^3.0.2",
     "postcss-nested": "^2.1.2",
-    "postcss-px2rem": "^0.3.0",
     "style-loader": "^0.18.2",
     "vue-loader": "^12.2.2",
     "vue-style-loader": "^3.0.1",

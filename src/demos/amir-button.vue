@@ -23,8 +23,8 @@
 			}
 		},
 		methods: {
-			emitClick(res) {
-				console.log('被点击了', res);
+			emitClick() {
+				console.log('clicked');
 			}
 		}
 	}

@@ -54,12 +54,6 @@
 		color:#fff;
 		border: 1px solid @mainColor;
 
-		&:hover {
-			background: @mainHoverColor;
-			border: 1px solid @mainHoverColor;
-			cursor: pointer;
-		}
-
 		@m big {
 			height:40px;
 			line-height: 40px;
@@ -97,7 +91,11 @@
 			}
 		}
 
-		
+		&:hover {
+			background: @mainHoverColor;
+			border: 1px solid @mainHoverColor;
+			cursor: pointer;
+		}
 		
 	}
 

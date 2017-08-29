@@ -47,7 +47,7 @@ module.exports = {
 								'modifier': 'm'
 							}
 						}),
-						// require('postcss-nested')()
+						require('postcss-nested')
 					],
 					extractCSS: true
 				}
