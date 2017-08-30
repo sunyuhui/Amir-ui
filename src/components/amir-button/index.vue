@@ -42,7 +42,11 @@
 
 <style lang="less" scoped>
 	@import '../common.less';
-	
+	@b btn:hover {
+		background: @mainHoverColor;
+		border: 1px solid @mainHoverColor;
+		cursor: pointer;
+	}
 	@b btn {
 		height: 30px;
 		line-height: 30px;
@@ -75,34 +79,21 @@
 			background:@disabledColor;
 			color:#b2b2b2;
 			border:1px solid #ccc;
+		}
 
-			&:hover {
-				background:@disabledColor;
-				border:1px solid #ccc;
-			}
+		@m disabled:hover {
+			background:@disabledColor;
+			border:1px solid #ccc;
 		}
 
 		@m hot {
 			background:@assistColor;
 			border:1px solid @assistColor;
-			&:hover {
-				background: @assistHoverColor;
-				border:1px solid @assistHoverColor;
-			}
 		}
 
-		.test {
-			&:hover {
-				background:#f00;
-			}
-		}
-
-		&:hover {
-			background: @mainHoverColor;
-			border: 1px solid @mainHoverColor;
-			cursor: pointer;
+		@m hot:hover {
+			background: @assistHoverColor;
+			border:1px solid @assistHoverColor;
 		}
 	}
-
-	
 </style>
