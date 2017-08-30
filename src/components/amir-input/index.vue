@@ -1,6 +1,7 @@
 <template>
-	<div class="amir-input-container">
+	<div class="amir--input">
 		<input 
+			class="amir--input__input"
 			:name="name" 
 			:title="title" 
 			:readonly="readonly" 
@@ -10,7 +11,7 @@
 			@input="output($event.target.value)"
 			@blur="checkValue($event.target.value)"
 		/>
-		<span v-show="showError" class="error-msg">{{errorText}}</span>
+		<span v-show="showError" class="amir--input__error">{{errorText}}</span>
 
 	</div>
 </template>
@@ -64,13 +65,15 @@
 </script>
 
 <style lang="less" scoped>
-	.amir-input-container {
+	@b input {
 		display: inline-block;
-		input {
+
+		@e input {
 			text-indent: 10px;
 			font-size: 14px;
 		}
-		.error-msg {
+
+		@e error {
 			display: inline;
 			color:#f00;
 			font-size: 14px;
