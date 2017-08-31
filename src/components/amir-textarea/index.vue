@@ -1,6 +1,7 @@
 <template>
-		<div class="amir-textarea-container">
+		<div class="amir--textarea">
 			<textarea 
+				class="amir--textarea__item"
 				:value="value" 
 				@keydown="emitDown($event)"
 				@input="emitInput($event.target.value)" 
@@ -9,7 +10,7 @@
 				:placeholder="placeholder" 
 				:readonly="readonly">
 			</textarea>
-			<span v-show="max">限 {{max}} 字以内，还可以输入 <i>{{limit}}</i> 字</span>
+			<span v-show="max" class="amir--textarea__span">限 {{max}} 字以内，还可以输入 <i class="amir--textarea__span__i">{{limit}}</i> 字</span>
 		</div>
 </template>
 <script>
@@ -58,17 +59,19 @@
 	}
 </script>
 
-<style lang="less" scoped>
-	textarea {
-		padding:10px;
-		font-size: 14px;
-		border:1px solid #ccc;
-	}
-	span {
-		display: block;
-		i {
-			font-style: normal;
-			color:#f00;
+<style lang="less">
+	@b textarea {
+		@e item {
+			padding:5px;
+			font-size: 14px;
+			border:1px solid #ccc;
+		}
+		@e span {
+			display: block;
+			@e i {
+				font-style: normal;
+				color:#f00;
+			}
 		}
 	}
 </style>
