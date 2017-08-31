@@ -1,7 +1,7 @@
 <template>
-	<div class="file-container" :class='{disable: readonly}'>
-		<input type="file" :disabled="readonly"  @change="choose($event.target.files)" v-if="multiple" multiple>
-		<input type="file" :disabled="readonly" @change="choose($event.target.files)" v-else>
+	<div class="amir--upload" :class="classObject">
+		<input type="file" class="amir--upload__item" :disabled="readonly"  @change="choose($event.target.files)" v-if="multiple" multiple>
+		<input type="file" class="amir--upload__item" :disabled="readonly" @change="choose($event.target.files)" v-else>
 		<span><slot>选择文件</slot></span>
 	</div>
 </template>
@@ -16,6 +16,13 @@
 			readonly: {
 				type: Boolean,
 				default: false
+			}
+		},
+		data() {
+			return {
+				classObject: {
+					'amir--upload--disable': this.readonly
+				}
 			}
 		},
 		methods: {
@@ -35,15 +42,14 @@
 </script>
 
 <style lang="less" scoped>
-	@mainColor: #3dc6b6;
-	@mainHoverColor: #20bba9;
-	@disabledColor: #e5e5e5;
-
-	.file-container {
+	@import '../common.less';
+	@b upload:hover {
+		background:@mainHoverColor;
+	}
+	@b upload {
 		position: relative;
 		display: inline-block;
 		padding:4px 10px;
-		
 		overflow: hidden;
 		height: 20px;
 		line-height: 20px;
@@ -51,17 +57,16 @@
 		color:#fff;
 		border-radius: 2px;
 
-		&:hover {
-			background:@mainHoverColor;
-		}
-
-		&.disable {
+		@m disable {
 			background: @disabledColor;
 			color:#b2b2b2;
 		}
-		
 
-		input[type='file'] {
+		@m disable:hover {
+			background: @disabledColor;
+		}
+
+		@e item {
 			position:absolute;
 			left:0;
 			top:0;
