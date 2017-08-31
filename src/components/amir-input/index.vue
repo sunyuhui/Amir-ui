@@ -1,7 +1,7 @@
 <template>
 	<div class="amir--input">
 		<input 
-			class="amir--input__input"
+			class="amir--input__item"
 			:name="name" 
 			:title="title" 
 			:readonly="readonly" 
@@ -64,11 +64,11 @@
 	}
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 	@b input {
 		display: inline-block;
 
-		@e input {
+		@e item {
 			text-indent: 10px;
 			font-size: 14px;
 		}

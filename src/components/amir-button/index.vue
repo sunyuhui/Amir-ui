@@ -40,7 +40,7 @@
 	}
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 	@import '../common.less';
 	@b btn:hover {
 		background: @mainHoverColor;
