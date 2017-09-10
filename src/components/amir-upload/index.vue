@@ -41,7 +41,7 @@
 	}
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 	@import '../common.less';
 	@b upload:hover {
 		background:@mainHoverColor;

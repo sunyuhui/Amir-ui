@@ -1,22 +1,22 @@
 <template>
-	<div class="amir-table-container">
-		<table :class="{border: border}">
-			<tr>
+	<div class="amir--table">
+		<table :class="tableClassObject">
+			<tr :class="trClassObject">
 				<template v-for="item in tableHead">
 					<template v-if="item.sortable">
-						<th>{{item.name}} <i class="up-sort icon" @click="sort('up', item.key)">^</i> <i class="down-sort icon" @click="sort('down', item.key)">^</i> </th>
+						<th :class="thClassObject">{{item.name}} <i :class="upSortClassObject" @click="sort('up', item.key)">^</i> <i :class="downSortClassObject" @click="sort('down', item.key)">^</i> </th>
 					</template>
-					<th v-else>{{item.name}}</th>
+					<th v-else :class="thClassObject">{{item.name}}</th>
 				</template>
 			</tr>
-			<tr v-if="tableData.length === 0">
-					<td :colspan="tableHead.length">暂无数据 ~</td>
+			<tr v-if="tableData.length === 0" :class="trClassObject">
+					<td :colspan="tableHead.length" :class="tdClassObject">暂无数据 ~</td>
 			</tr>
 			<template v-else>
-				<tr v-for="item in tableData">
+				<tr v-for="item in tableData" :class="trClassObject">
 					<template v-for="head in tableHead">
-						<td v-if="raw && raw.length>0 && raw.indexOf(head.key) !== -1" v-html="item[head.key]"></td>
-						<td v-else>{{item[head.key]}}</td>
+						<td :class="tdClassObject" v-if="raw && raw.length>0 && raw.indexOf(head.key) !== -1" v-html="item[head.key]"></td>
+						<td :class="tdClassObject" v-else>{{item[head.key]}}</td>
 					</template>
 				</tr>
 			</template>
@@ -43,6 +43,33 @@
 				type: [Array, String]
 			}
 		},
+		data() {
+			return {
+				tableClassObject: {
+					'amir--table__item': true,
+					'amir--table__item--border': this.border
+				},
+				trClassObject: {
+					'amir--table__tr': true
+				},
+				thClassObject: {
+					'amir--table__th': true,
+					'amir--table__th--border': this.border
+				},
+				tdClassObject: {
+					'amir--table__td': true,
+					'amir--table__td--border': this.border
+				},
+				upSortClassObject: {
+					'amir--table__sort--up': true,
+					'amir--table__sort': true
+				},
+				downSortClassObject: {
+					'amir--table__sort--down': true,
+					'amir--table__sort': true
+				}
+			}
+		},
 		methods: {
 			sort(type, key) {
 				let sortedData = this.tableData.sort((a, b)=>{
@@ -54,58 +81,68 @@
 	}
 </script>
 
-<style lang="less" scoped>
-	table {
-		min-width: 760px;
-		min-height: 40px;
-		font-size: 14px;
-		color:#666;
-		border-collapse: collapse;
+<style lang="less">
+	@b table {
+		@e item {
+			min-width: 760px;
+			min-height: 40px;
+			font-size: 14px;
+			color:#666;
+			border-collapse: collapse;
+		}
 
-		tr {
-			th {
-				position: relative;
-				background:#fafafa;
-				.icon {
-					position:absolute;
-					right:15px;
-					font-style: normal;
-					width:10px;
-					height:10px;
-					line-height: 10px;
-					&:hover {
-						cursor: pointer;
-					}
+		@e tr:hover {
+			background:#fafafa;
+			cursor:pointer;
+		}
 
-					&.up-sort {
-						bottom: 20px;
-					}
+		@e th {
+			position: relative;
+			background:#fafafa;
+			height:40px;
+			line-height: 40px;
+			text-align: center;
 
-					&.down-sort {
-						transform: rotate(180deg);
-						-webkit-transform: rotate(180deg);
-						bottom: 10px;
-					}
-				}
-			}
-			th, td {
-				height:40px;
-				line-height: 40px;
-				text-align: center;
-			}
-			&:hover {
-				background:#fafafa;
+			@m border {
+				border: 1px solid #eaeaea;
 			}
 		}
 
-		&.border {
-			th {
-				border: 1px solid #eaeaea;
-			}
-			td {
+		@e th:hover {
+			background:#fafafa;
+		}
+
+		@e td {
+			height:40px;
+			line-height: 40px;
+			text-align: center;
+
+			@m border {
 				border: 1px solid #eaeaea;
 				border-top: none;
 			}
 		}
+
+		@e sort {
+			position:absolute;
+			right:15px;
+			font-style: normal;
+			width:10px;
+			height:10px;
+			line-height: 10px;
+			@m up {
+				bottom: 20px;
+			}
+			@m down {
+				transform: rotate(180deg);
+				-webkit-transform: rotate(180deg);
+				bottom: 10px;
+			}
+		}
+
+		@e sort:hover {
+			cursor: pointer;
+		}
+
 	}
 </style>
