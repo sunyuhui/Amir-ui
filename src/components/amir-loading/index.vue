@@ -1,18 +1,18 @@
 <template>
-	<div class="container" v-show="show">
-		<div class="amir-loading-container">
-			<div class="loading-item"></div>
-			<div class="loading-item"></div>
-			<div class="loading-item"></div>
-			<div class="loading-item"></div>
-			<div class="loading-item"></div>
-			<div class="loading-item"></div>
-			<div class="loading-item"></div>
-			<div class="loading-item"></div>
-			<div class="loading-item"></div>
-			<div class="loading-item"></div>
-			<div class="loading-item"></div>
-			<div class="loading-item"></div>
+	<div class="amir--loading" v-show="show">
+		<div class="amir--loading__container">
+			<div class="amir--loading__container__item"></div>
+			<div class="amir--loading__container__item"></div>
+			<div class="amir--loading__container__item"></div>
+			<div class="amir--loading__container__item"></div>
+			<div class="amir--loading__container__item"></div>
+			<div class="amir--loading__container__item"></div>
+			<div class="amir--loading__container__item"></div>
+			<div class="amir--loading__container__item"></div>
+			<div class="amir--loading__container__item"></div>
+			<div class="amir--loading__container__item"></div>
+			<div class="amir--loading__container__item"></div>
+			<div class="amir--loading__container__item"></div>
 		</div>
 	</div>
 </template>
@@ -26,16 +26,16 @@
 		}
 	}
 </script>
-<style lang="less" scoped>
-	@mainColor: #3dc6b6;
-	.container {
+<style lang="less">
+	@import '../common.less';
+	@b loading {
 		position: absolute;
 		left:0;
 		top:0;
 		right:0;
 		bottom:0;
 		background:rgba(255,255,255,0.7);
-		.amir-loading-container {
+		@e container {
 			width:40px;
 			height:40px;
 			position: absolute;
@@ -44,7 +44,7 @@
 			margin-left: -20px;
 			margin-top: -20px;
 
-			.loading-item {
+			@e item {
 				width:100%;
 				height: 100%;
 				position:absolute;
@@ -60,7 +60,9 @@
 					}
 				}
 
-				&:before {
+			}
+
+				@e item:before {
 					content: '';
 					display: block;
 					margin: 0 auto;
@@ -71,73 +73,72 @@
 					animation: loading-animation 1.2s infinite ease-in-out both;
 				}
 
-				&:nth-child(2) {
+				@e item:nth-child(2) {
 					transform: rotate(30deg);
-					&:before {
-						animation-delay: -1.1s;
-					}
 				}
-				&:nth-child(3) {
+				@e item:nth-child(2):before {
+					animation-delay: -1.1s;
+				}
+				@e item:nth-child(3) {
 					transform: rotate(60deg);
-					&:before {
-						animation-delay: -1s;
-					}
 				}
-				&:nth-child(4) {
+				@e item:nth-child(3):before {
+					animation-delay: -1s;
+				}
+				@e item:nth-child(4) {
 					transform: rotate(90deg);
-					&:before {
-						animation-delay: -0.9s;
-					}
 				}
-				&:nth-child(5) {
+				@e item:nth-child(4):before {
+					animation-delay: -0.9s;
+				}
+				@e item:nth-child(5) {
 					transform: rotate(120deg);
-					&:before {
-						animation-delay: -0.8s;
-					}
 				}
-				&:nth-child(6) {
+				@e item:nth-child(5):before {
+					animation-delay: -0.8s;
+				}
+				@e item:nth-child(6) {
 					transform: rotate(150deg);
-					&:before {
-						animation-delay: -0.7s;
-					}
 				}
-				&:nth-child(7) {
+				@e item:nth-child(6):before {
+					animation-delay: -0.7s;
+				}
+				@e item:nth-child(7) {
 					transform: rotate(180deg);
-					&:before {
-						animation-delay: -0.6s;
-					}
 				}
-				&:nth-child(8) {
+				@e item:nth-child(7):before {
+					animation-delay: -0.6s;
+				}
+				@e item:nth-child(8) {
 					transform: rotate(210deg);
-					&:before {
-						animation-delay: -0.5s;
-					}
 				}
-				&:nth-child(9) {
+				@e item:nth-child(8):before {
+					animation-delay: -0.5s;
+				}
+				@e item:nth-child(9) {
 					transform: rotate(240deg);
-					&:before {
-						animation-delay: -0.4s;
-					}
 				}
-				&:nth-child(10) {
+				@e item:nth-child(9):before {
+					animation-delay: -0.4s;
+				}
+				@e item:nth-child(10) {
 					transform: rotate(270deg);
-					&:before {
-						animation-delay: -0.3s;
-					}
 				}
-				&:nth-child(11) {
+				@e item:nth-child(10):before {
+					animation-delay: -0.3s;
+				}
+				@e item:nth-child(11) {
 					transform: rotate(300deg);
-					&:before {
-						animation-delay: -0.2s;
-					}
 				}
-				&:nth-child(12) {
+				@e item:nth-child(11):before {
+					animation-delay: -0.2s;
+				}
+				@e item:nth-child(12) {
 					transform: rotate(330deg);
-					&:before {
-						animation-delay: -0.1s;
-					}
 				}
-			}
+				@e item:nth-child(12):before {
+					animation-delay: -0.1s;
+				}
 		}
 	}
 </style>
