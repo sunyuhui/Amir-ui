@@ -1,6 +1,6 @@
 <template>
-	<div class="amir-toast-container" v-if="show">
-		<div class="content">
+	<div class="amir--toast" v-if="show">
+		<div class="amir--toast__content">
 			<slot>toast</slot>
 		</div>
 	</div>
@@ -36,8 +36,8 @@
 </script>
 
 <style lang="less">
-	@mainColor: #3dc6b6;
-	.amir-toast-container {
+	@import '../common.less';
+	@b toast {
 		position:absolute;
 		width:200px;
 		height:70px;
@@ -51,7 +51,7 @@
 		border-radius: 4px;
 		text-align: center;
 
-		.content {
+		@e content {
 			margin-top: 25px;
 		}
 	}
