@@ -182,7 +182,7 @@
 			font-size: 12px;
 			color:#666;
 
-			@e item {
+			@e span {
 				font-size: 12px;
 				color:#666;
 			}

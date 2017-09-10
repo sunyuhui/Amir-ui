@@ -1,11 +1,11 @@
 <template>
-	<div class="amir-dialog-container" v-show="show">
-		<div class="dialog-content">
-			<p class="title">{{title}}</p>
-			<div class="main">
+	<div class="amir--dialog" v-show="show">
+		<div class="amir--dialog__content">
+			<p class="amir--dialog__content__title">{{title}}</p>
+			<div class="amir--dialog__content__main">
 				<slot></slot>
 			</div>
-			<div class="footer">
+			<div class="amir--dialog__content__footer">
 				<slot name="footer"></slot>
 			</div>
 		</div>
@@ -22,11 +22,16 @@
 				type: Boolean,
 				default: false
 			}
+		},
+		data() {
+			return {
+
+			}
 		}
 	}
 </script>
-<style lang="less" scoped>
-	.amir-dialog-container {
+<style lang="less">
+	@b dialog {
 		position: fixed;
 		left:0;
 		right:0;
@@ -37,7 +42,7 @@
 		justify-content: center;
 		align-items: center;
 
-		.dialog-content {
+		@e content {
 			position:relative;
 			background:#fff;
 			min-width: 260px;
@@ -46,7 +51,7 @@
 			max-height: 400px;
 			border-radius: 4px;
 
-			.title {
+			@e title {
 				background:#eee;
 				padding:0 10px;
 				font-size: 16px;
@@ -55,11 +60,13 @@
 				color:#000;
 				font-weight: bold;
 			}
-			.main {
+
+			@e main {
 				margin:10px 0;
 				padding:0 10px;
 			}
-			.footer {
+
+			@e footer {
 				width:100%;
 				margin-bottom: 10px;
 				text-align: center;
