@@ -796,6 +796,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-button',
 	props: {
 		size: {
 			type: String,
@@ -848,6 +849,7 @@ var _amirButton2 = _interopRequireDefault(_amirButton);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
+	name: 'a-confirm',
 	components: {
 		AmirButton: _amirButton2.default
 	},
@@ -916,6 +918,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-dialog',
 	props: {
 		title: {
 			type: String,
@@ -961,6 +964,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-input',
 	data: function data() {
 		return {
 			showError: false,
@@ -1037,6 +1041,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-loading',
 	props: {
 		show: {
 			type: Boolean,
@@ -1063,6 +1068,7 @@ var _amirButton2 = _interopRequireDefault(_amirButton);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
+	name: 'a-pagination',
 	components: {
 		AmirButton: _amirButton2.default
 	},
@@ -1207,6 +1213,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-select',
 	model: {
 		prop: 'selected',
 		event: 'change'
@@ -1268,6 +1275,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-table',
 	props: {
 		tableData: {
 			type: Array,
@@ -1350,6 +1358,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-textarea',
 	props: {
 		value: {
 			type: String
@@ -1413,6 +1422,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-toast',
 	props: {
 		show: {
 			type: Boolean,
@@ -1459,6 +1469,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-upload',
 	props: {
 		multiple: {
 			type: Boolean,
@@ -1502,6 +1513,8 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+
+var _amir;
 
 var _amirButton = __webpack_require__(1);
 
@@ -1549,19 +1562,9 @@ var _amirUpload2 = _interopRequireDefault(_amirUpload);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var amir = {
-	"a-button": _amirButton2.default,
-	"a-loading": _amirLoading2.default,
-	"a-toast": _amirToast2.default,
-	"a-pagination": _amirPagination2.default,
-	'a-confirm': _amirConfirm2.default,
-	'a-table': _amirTable2.default,
-	'a-input': _amirInput2.default,
-	'a-select': _amirSelect2.default,
-	'a-textarea': _amirTextarea2.default,
-	'a-dialog': _amirDialog2.default,
-	'a-upload': _amirUpload2.default
-};
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var amir = (_amir = {}, _defineProperty(_amir, _amirButton2.default.name, _amirButton2.default), _defineProperty(_amir, _amirLoading2.default.name, _amirLoading2.default), _defineProperty(_amir, _amirToast2.default.name, _amirToast2.default), _defineProperty(_amir, _amirPagination2.default.name, _amirPagination2.default), _defineProperty(_amir, _amirConfirm2.default.name, _amirConfirm2.default), _defineProperty(_amir, _amirTable2.default.name, _amirTable2.default), _defineProperty(_amir, _amirInput2.default.name, _amirInput2.default), _defineProperty(_amir, _amirSelect2.default.name, _amirSelect2.default), _defineProperty(_amir, _amirTextarea2.default.name, _amirTextarea2.default), _defineProperty(_amir, _amirDialog2.default.name, _amirDialog2.default), _defineProperty(_amir, _amirUpload2.default.name, _amirUpload2.default), _amir);
 
 function install(Vue) {
 	Object.keys(amir).forEach(function (key) {

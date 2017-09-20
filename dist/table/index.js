@@ -213,6 +213,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-table',
 	props: {
 		tableData: {
 			type: Array,

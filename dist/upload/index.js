@@ -195,6 +195,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-upload',
 	props: {
 		multiple: {
 			type: Boolean,

@@ -299,6 +299,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-dialog',
 	props: {
 		title: {
 			type: String,

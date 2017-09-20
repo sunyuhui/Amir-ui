@@ -324,6 +324,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-loading',
 	props: {
 		show: {
 			type: Boolean,

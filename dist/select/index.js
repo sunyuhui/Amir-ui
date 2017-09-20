@@ -197,6 +197,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-select',
 	model: {
 		prop: 'selected',
 		event: 'change'

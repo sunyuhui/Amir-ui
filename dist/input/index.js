@@ -318,6 +318,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-input',
 	data: function data() {
 		return {
 			showError: false,

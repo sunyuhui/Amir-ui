@@ -193,6 +193,7 @@ Object.defineProperty(exports, "__esModule", {
 //
 
 exports.default = {
+	name: 'a-button',
 	props: {
 		size: {
 			type: String,
@@ -487,6 +488,7 @@ var _amirButton2 = _interopRequireDefault(_amirButton);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
+	name: 'a-pagination',
 	components: {
 		AmirButton: _amirButton2.default
 	},
