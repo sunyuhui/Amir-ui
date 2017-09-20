@@ -18,6 +18,7 @@
 
 <script>
 	export default {
+		name: 'a-input',
 		data() {
 			return {
 				showError: false,

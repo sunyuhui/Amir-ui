@@ -15,6 +15,7 @@
 </template>
 <script>
 	export default {
+		name: 'a-textarea',
 		props: {
 			value: {
 				type: String

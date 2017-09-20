@@ -10,6 +10,7 @@
 
 <script>
 	export default {
+		name: 'a-select',
 		model: {
 			prop: 'selected',
 			event: 'change'

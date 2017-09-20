@@ -8,6 +8,7 @@
 
 <script>
 	export default {
+		name: 'a-upload',
 		props: {
 			multiple: {
 				type: Boolean,

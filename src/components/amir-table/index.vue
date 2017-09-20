@@ -26,6 +26,7 @@
 
 <script>
 	export default {
+		name: 'a-table',
 		props: {
 			tableData: {
 				type: Array,

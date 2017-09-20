@@ -13,6 +13,7 @@
 </template>
 <script>
 	export default {
+		name: 'a-dialog',
 		props: {
 			title: {
 				type: String,

@@ -8,6 +8,7 @@
 
 <script>
 	export default {
+		name: 'a-toast',
 		props: {
 			show: {
 				type: Boolean,
@@ -36,7 +37,6 @@
 </script>
 
 <style lang="less">
-	@import '../common.less';
 	@b toast {
 		position:absolute;
 		width:200px;

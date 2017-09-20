@@ -11,17 +11,17 @@ import AmirDialog from './amir-dialog'
 import AmirUpload from './amir-upload'
 
 let amir = {
-	"a-button": AmirButton,
-	"a-loading": AmirLoading,
-	"a-toast": AmirToast,
-	"a-pagination": AmirPagination,
-	'a-confirm': AmirConfirm,
-	'a-table': AmirTable,
-	'a-input': AmirInput,
-	'a-select': AmirSelect,
-	'a-textarea': AmirTextarea,
-	'a-dialog': AmirDialog,
-	'a-upload': AmirUpload
+	[AmirButton.name]: AmirButton,
+	[AmirLoading.name]: AmirLoading,
+	[AmirToast.name]: AmirToast,
+	[AmirPagination.name]: AmirPagination,
+	[AmirConfirm.name]: AmirConfirm,
+	[AmirTable.name]: AmirTable,
+	[AmirInput.name]: AmirInput,
+	[AmirSelect.name]: AmirSelect,
+	[AmirTextarea.name]: AmirTextarea,
+	[AmirDialog.name]: AmirDialog,
+	[AmirUpload.name]: AmirUpload
 };
 
 function install(Vue) {

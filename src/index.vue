@@ -30,7 +30,7 @@
 	}
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 @mainColor: #3dc6b6;
 .container {
   margin:60px auto;
@@ -40,6 +40,7 @@
 
   .title {
     font-size: 30px;
+    margin-bottom: 20px!important;
   }
 
   a {

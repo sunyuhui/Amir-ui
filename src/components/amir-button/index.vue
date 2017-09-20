@@ -6,6 +6,7 @@
 
 <script>
 	export default {
+		name: 'a-button',
 		props: {
 			size: {
 				type: String,

@@ -15,6 +15,7 @@
 <script>
 	import AmirButton from '../amir-button'
 	export default {
+		name: 'a-confirm',
 		components: {
 			AmirButton
 		},

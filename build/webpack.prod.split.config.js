@@ -9,7 +9,7 @@ function generateEntry(componentNames){
 	componentNames.forEach(function(item, index) {
 		object[item] = path.resolve(__dirname, '../src/components/amir-' + item + '/index.vue' );
 	});
-	return object
+	return object;
 }
 
 module.exports = {
