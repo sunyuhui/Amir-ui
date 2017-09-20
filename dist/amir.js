@@ -236,7 +236,7 @@ if (false) {(function () {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_15a7a210_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_15a7a210_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(36);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -250,12 +250,12 @@ var normalizeComponent = __webpack_require__(0)
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-15a7a210"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_15a7a210_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_15a7a210_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -291,7 +291,7 @@ if (false) {(function () {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3b27fcb4_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3b27fcb4_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(38);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -305,12 +305,12 @@ var normalizeComponent = __webpack_require__(0)
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-3b27fcb4"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3b27fcb4_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3b27fcb4_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -401,7 +401,7 @@ if (false) {(function () {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_49bb8318_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_49bb8318_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(39);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -415,12 +415,12 @@ var normalizeComponent = __webpack_require__(0)
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-49bb8318"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_49bb8318_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_49bb8318_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -456,7 +456,7 @@ if (false) {(function () {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b30eb810_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b30eb810_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(43);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -470,12 +470,12 @@ var normalizeComponent = __webpack_require__(0)
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-b30eb810"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_index_vue___default.a,
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b30eb810_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b30eb810_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -888,6 +888,8 @@ exports.default = {
 //
 //
 //
+//
+//
 
 /***/ }),
 /* 14 */
@@ -923,6 +925,9 @@ exports.default = {
 			type: Boolean,
 			default: false
 		}
+	},
+	data: function data() {
+		return {};
 	}
 };
 
@@ -1065,7 +1070,26 @@ exports.default = {
 		return {
 			beforeItems: [2, 1], //倒叙，保证输出的页码能以正序呈现
 			afterItems: [1, 2],
-			destinationPage: ''
+			destinationPage: '',
+			aClassObject: {
+				'amir--pagination__a': true
+			},
+			dotClassObject: {
+				'amir--pagination__dot': true
+			},
+			activeClassObject: {
+				'amir--pagination__a': true,
+				'amir--pagination__a--active': true
+			},
+			gotoClassObject: {
+				'amir--pagination__goto': true
+			},
+			spanClassObject: {
+				'amir--pagination__goto__span': true
+			},
+			inputClassObject: {
+				'amir--pagination__goto__input': true
+			}
 		};
 	},
 
@@ -1086,14 +1110,16 @@ exports.default = {
 	computed: {
 		prevClass: function prevClass() {
 			return {
-				prev: true,
-				disabled: this.currentPage === 1
+				'amir--pagination__a': true,
+				'amir--pagination__a--prev': true,
+				'amir--pagination__a--disabled': this.currentPage === 1
 			};
 		},
 		nextClass: function nextClass() {
 			return {
-				next: true,
-				disabled: this.currentPage === this.totalPage
+				'amir--pagination__a': true,
+				'amir--pagination__a--next': true,
+				'amir--pagination__a--disabled': this.currentPage === this.totalPage
 			};
 		}
 	},
@@ -1269,10 +1295,12 @@ exports.default = {
 				'amir--table__tr': true
 			},
 			thClassObject: {
-				'amir--table__th': true
+				'amir--table__th': true,
+				'amir--table__th--border': this.border
 			},
 			tdClassObject: {
-				'amir--table__td': true
+				'amir--table__td': true,
+				'amir--table__td--border': this.border
 			},
 			upSortClassObject: {
 				'amir--table__sort--up': true,
@@ -1666,13 +1694,15 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       value: (_vm.show),
       expression: "show"
     }],
-    staticClass: "amir-confirm"
+    staticClass: "amir--confirm"
   }, [_c('div', {
-    staticClass: "container"
+    staticClass: "amir--confirm__container"
   }, [_c('div', {
-    staticClass: "content"
-  }, [_c('p', [_vm._t("default", [_vm._v("你确定吗？")])], 2), _vm._v(" "), _c('amir-button', {
-    staticClass: "cancel-button",
+    staticClass: "amir--confirm__container__content"
+  }, [_c('p', [_vm._t("default", [_vm._v("你确定吗？")])], 2), _vm._v(" "), _c('p', {
+    staticClass: "amir--confirm__container__content__footer"
+  }, [_c('amir-button', {
+    staticClass: "amir--confirm__container__content__cancel",
     on: {
       "click": _vm.cancel
     }
@@ -1680,7 +1710,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     on: {
       "click": _vm.confirm
     }
-  }, [_vm._v(_vm._s(_vm.confirmText))])], 1)])])
+  }, [_vm._v(_vm._s(_vm.confirmText))])], 1)])])])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -1722,10 +1752,13 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
           _vm.sort('down', item.key)
         }
       }
-    }, [_vm._v("^")])])] : _c('th', [_vm._v(_vm._s(item.name))])]
+    }, [_vm._v("^")])])] : _c('th', {
+      class: _vm.thClassObject
+    }, [_vm._v(_vm._s(item.name))])]
   })], 2), _vm._v(" "), (_vm.tableData.length === 0) ? _c('tr', {
     class: _vm.trClassObject
   }, [_c('td', {
+    class: _vm.tdClassObject,
     attrs: {
       "colspan": _vm.tableHead.length
     }
@@ -1734,10 +1767,13 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       class: _vm.trClassObject
     }, [_vm._l((_vm.tableHead), function(head) {
       return [(_vm.raw && _vm.raw.length > 0 && _vm.raw.indexOf(head.key) !== -1) ? _c('td', {
+        class: _vm.tdClassObject,
         domProps: {
           "innerHTML": _vm._s(item[head.key])
         }
-      }) : _c('td', [_vm._v(_vm._s(item[head.key]))])]
+      }) : _c('td', {
+        class: _vm.tdClassObject
+      }, [_vm._v(_vm._s(item[head.key]))])]
     })], 2)
   })], 2)])
 }
@@ -1765,15 +1801,15 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       value: (_vm.show),
       expression: "show"
     }],
-    staticClass: "amir-dialog-container"
+    staticClass: "amir--dialog"
   }, [_c('div', {
-    staticClass: "dialog-content"
+    staticClass: "amir--dialog__content"
   }, [_c('p', {
-    staticClass: "title"
+    staticClass: "amir--dialog__content__title"
   }, [_vm._v(_vm._s(_vm.title))]), _vm._v(" "), _c('div', {
-    staticClass: "main"
+    staticClass: "amir--dialog__content__main"
   }, [_vm._t("default")], 2), _vm._v(" "), _c('div', {
-    staticClass: "footer"
+    staticClass: "amir--dialog__content__footer"
   }, [_vm._t("footer")], 2)])])
 }
 var staticRenderFns = []
@@ -1800,36 +1836,36 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       value: (_vm.show),
       expression: "show"
     }],
-    staticClass: "container"
+    staticClass: "amir--loading"
   }, [_vm._m(0)])
 }
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "amir-loading-container"
+    staticClass: "amir--loading__container"
   }, [_c('div', {
-    staticClass: "loading-item"
+    staticClass: "amir--loading__container__item"
   }), _vm._v(" "), _c('div', {
-    staticClass: "loading-item"
+    staticClass: "amir--loading__container__item"
   }), _vm._v(" "), _c('div', {
-    staticClass: "loading-item"
+    staticClass: "amir--loading__container__item"
   }), _vm._v(" "), _c('div', {
-    staticClass: "loading-item"
+    staticClass: "amir--loading__container__item"
   }), _vm._v(" "), _c('div', {
-    staticClass: "loading-item"
+    staticClass: "amir--loading__container__item"
   }), _vm._v(" "), _c('div', {
-    staticClass: "loading-item"
+    staticClass: "amir--loading__container__item"
   }), _vm._v(" "), _c('div', {
-    staticClass: "loading-item"
+    staticClass: "amir--loading__container__item"
   }), _vm._v(" "), _c('div', {
-    staticClass: "loading-item"
+    staticClass: "amir--loading__container__item"
   }), _vm._v(" "), _c('div', {
-    staticClass: "loading-item"
+    staticClass: "amir--loading__container__item"
   }), _vm._v(" "), _c('div', {
-    staticClass: "loading-item"
+    staticClass: "amir--loading__container__item"
   }), _vm._v(" "), _c('div', {
-    staticClass: "loading-item"
+    staticClass: "amir--loading__container__item"
   }), _vm._v(" "), _c('div', {
-    staticClass: "loading-item"
+    staticClass: "amir--loading__container__item"
   })])
 }]
 render._withStripped = true
@@ -1849,9 +1885,9 @@ if (false) {
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return (_vm.show) ? _c('div', {
-    staticClass: "amir-toast-container"
+    staticClass: "amir--toast"
   }, [_c('div', {
-    staticClass: "content"
+    staticClass: "amir--toast__content"
   }, [_vm._t("default", [_vm._v("toast")])], 2)]) : _vm._e()
 }
 var staticRenderFns = []
@@ -1966,37 +2002,39 @@ if (false) {
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "amir-pagination-container"
+    staticClass: "amir--pagination"
   }, [_c('a', {
     class: _vm.prevClass,
     on: {
       "click": _vm.switchPrevPage
     }
   }, [_vm._v(" < 上一页")]), _vm._v(" "), (_vm.currentPage > 1) ? _c('a', {
+    class: _vm.aClassObject,
     on: {
       "click": _vm.switchPage
     }
   }, [_vm._v("1")]) : _vm._e(), _vm._v(" "), (_vm.currentPage > 2 + 1 + 1) ? [_c('span', {
-    staticClass: "dot"
+    class: _vm.dotClassObject
   }, [_vm._v("...")])] : _vm._e(), _vm._v(" "), _vm._l((_vm.beforeItems), function(item) {
     return [(_vm.currentPage > item + 1) ? _c('a', {
-      staticClass: "neighbor-page",
+      class: _vm.aClassObject,
       on: {
         "click": _vm.switchPage
       }
     }, [_vm._v(_vm._s(_vm.currentPage - item))]) : _vm._e()]
   }), _vm._v(" "), _c('a', {
-    staticClass: "active"
+    class: _vm.activeClassObject
   }, [_vm._v(_vm._s(_vm.currentPage))]), _vm._v(" "), _vm._l((_vm.afterItems), function(item) {
     return [(_vm.currentPage + item < _vm.totalPage) ? _c('a', {
-      staticClass: "neighbor-page",
+      class: _vm.aClassObject,
       on: {
         "click": _vm.switchPage
       }
     }, [_vm._v(_vm._s(_vm.currentPage + item))]) : _vm._e()]
   }), _vm._v(" "), (_vm.currentPage + 2 + 1 < _vm.totalPage) ? [_c('span', {
-    staticClass: "dot"
+    class: _vm.dotClassObject
   }, [_vm._v("...")])] : _vm._e(), _vm._v(" "), (_vm.currentPage < _vm.totalPage) ? _c('a', {
+    class: _vm.aClassObject,
     on: {
       "click": _vm.switchPage
     }
@@ -2006,9 +2044,9 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "click": _vm.switchNextPage
     }
   }, [_vm._v("下一页 > ")]), _vm._v(" "), (_vm.goto) ? _c('div', {
-    staticClass: "goto-container"
+    class: _vm.gotoClassObject
   }, [_c('span', {
-    staticClass: "goto"
+    class: _vm.spanClassObject
   }, [_vm._v("前往 ")]), _c('input', {
     directives: [{
       name: "model",
@@ -2016,7 +2054,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       value: (_vm.destinationPage),
       expression: "destinationPage"
     }],
-    staticClass: "goto-input",
+    class: _vm.inputClassObject,
     attrs: {
       "type": "text"
     },
