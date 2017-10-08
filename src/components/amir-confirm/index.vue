@@ -1,12 +1,10 @@
 <template>
 	<div class="amir--confirm" v-show="show">
 		<div class="amir--confirm__container">
-			<div class="amir--confirm__container__content">
-				<p><slot>你确定吗？</slot></p>
-				<p class="amir--confirm__container__content__footer">
-					<amir-button @click="cancel" class="amir--confirm__container__content__cancel">{{cancelText}}</amir-button>
-					<amir-button @click="confirm">{{confirmText}}</amir-button>
-				</p>
+			<div class="amir--confirm__container__body"><slot>你确定吗？</slot></div>
+			<div class="amir--confirm__container__footer">
+				<amir-button @click="cancel" class="amir--confirm__container__cancel">{{cancelText}}</amir-button>
+				<amir-button @click="confirm">{{confirmText}}</amir-button>
 			</div>
 		</div>
 	</div>
@@ -69,21 +67,22 @@
 			margin-left: -130px;
 			margin-top: -70px;
 
-			@e content {
-				width:260px;
-				height:100px;
+			@e body {
 				position:absolute;
 				top:50%;
 				left:50%;
-				margin-left: -130px;
-				margin-top: -50px;
-				
-				@e footer {
-					
-				}
-				@e cancel {
-					margin-right: 20px;
-				}
+				transform: translate(-50%, -50%);
+				margin-top: -10px;
+			}
+			
+			@e footer {
+				position:absolute;
+				bottom:10px;
+				width:100%;
+				text-align:center;
+			}
+			@e cancel {
+				margin-right: 20px;
 			}
 		}
 	}
